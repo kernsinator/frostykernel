@@ -39,3 +39,17 @@ a:hover {
     color: pink;
     font-size: xx-large;
     }
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+}
+
+nav {
+  background-color: black;
+}
+
+nav li {
+  display: inline;
+}

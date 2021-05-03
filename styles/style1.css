@@ -1,0 +1,129 @@
+html {
+    font-size: 16px; 
+    font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+    background-color: white;
+  }
+
+  body {
+    width: 600px;
+    margin: 0 0 0 -20px;
+    padding: 0 20px 20px 20px;
+    /*width: 75vw; viewport width  */
+  }
+
+  img {
+    display: block;
+    max-width: 100%; /* image will resize to fit container */
+    height: auto; /* image will adjust to maintain aspect ratio */
+  }
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+  }
+  
+h2 {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    
+    }
+
+button {
+  background-color: #FF790E;
+}
+
+a:hover {
+    color: pink;
+    }
+
+#navbar {
+  position: relative;
+  left: 0px;
+}
+
+nav {
+  background-color: 	hsl(178, 80%, 25%);
+  display: flex;
+  justify-content: center;
+  padding: 0.1em;
+}
+
+nav li {
+  display: inline;
+  color: white;
+  padding: 1em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+header {
+  background-color: #09A7A1;
+  width: 100vw;
+}
+
+footer {
+  background-color: #09A7A1;
+  padding: 0.5em;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  width: 100vw;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+  100%{
+    background-color: #4791d0;
+  }
+  
+}
+
+.princeton {
+  background-color: cyan;
+}
+
+h2:focus {
+  background-color: yellow;
+}
+main {
+  display: block;
+  margin: 0 auto;
+
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 90vw;
+  }
+  nav li {
+    width: 10%;
+  }
+  
+}
+

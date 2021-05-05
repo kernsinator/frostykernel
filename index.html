@@ -2,47 +2,64 @@
 <html>
 
 <head>
-  <link href="styles/style.css" rel="stylesheet" type="text/css" media="all">
-  <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="/styles/style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FrostyKernel</title>
 </head>
 
 <body>
-  <header>
-    <h1> FrostyKernel Language Resources </h1>
-    <nav id="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/puzzle-directory.html" accesskey="p">Puzzles</a></li>
-        <li><a href="pages/about.html">About</a></li>
-      </ul>
+  <header id="header" class="grid-element">
+    <a href="/index.html" id="title"> FrostyKernel</a>
+    <nav class="topnav" id="navbar">
+      <a href="/index.html" class="active">Home</a>
+      <!-- can use active to css as a reminder of which page visitor is on-->
+      <!--<a href="pages/puzzle-directory.html" accesskey="p">Puzzles</a>
+      <a href="pages/about.html">About</a>-->
+      <a href="/pages/puzzle-directory.html" accesskey="p">Puzzles</a>
+      <a href="/pages/about.html">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
-  <main class="test">
-    <h2>Why does this site exist</h2>
+  <main class="grid-element">
+    <h1>Start Here</h1>
+    <ul class="introduction-list">
+      <li>
+        Hit the ground running with<a href="/pages/puzzle-directory.html" class="main-links">puzzles</a>.
+      </li>
+      <li><strong>OR</strong></li>
+      <li>
+        You can read a little about us<a href="/pages/about.html" class="main-links">here</a>.
+      </li>
+    </ul>
     <hr>
+    <h2 class="index-header2">What is FrostyKernel?</h2>
     <p>
-      This page serves as a collection of language puzzles, resources, and a few memes. The main purpose
-      of its creation was to rework some old language puzzles found online that had not bene updated or maintained.
-      The puzzles were created by other organizations such as ***. Each is attributed with the appropriate organization
-      and author.
-      This page only serves to present the completed puzzles with functioning answer-checking, and maybe a more
-      attractive
-      design.
+      This is a place to melt your brain in a linguistic fashion.</p>
+    <p>The difficulty ratings were provided
+      by the organizations that created the puzzles. You can rest assured that there is something for everyone.
     </p>
-    <h2 tabindex="0">Organizations</h2>
-    <hr>
+    <h2 class="index-header2" tabindex="0">Organizations</h2>
     <p>
       The puzzles seen on this site were obtained from several different organizations listed below.
     </p>
-    <h3>NACLO</h3>
-    <a href="#">princeton</a>
+    <div class="organizations">
+      <h3>The Linguistics Challenge</h3>
+      <p>A predecessor to the NACLO. Now defunct but the site is still maintained<a
+          href="https://lingclub.mycpanel.princeton.edu/challenge/LCbackground.htm" class="main-links"
+          target="_blank">here</a>.</p>
+      <h3>NACLO</h3>
+      <p>I'll add more text here, get off my back MOM.</p>
+    </div>
   </main>
-  <footer> Created by <a href="https://www.tylerkerns.com" target="_blank">Tyler Kerns</a></footer>
-  <!--<script src="scripts/main.js"></script>-->
+  <footer id="footer" class="grid-element"> Created by <a href="https://www.tylerkerns.com" target="_blank"
+      class="links">Tyler Kerns</a></footer>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>

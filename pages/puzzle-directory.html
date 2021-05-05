@@ -2,53 +2,50 @@
 <html>
 
 <head>
-    <link href="/styles/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrostyKernel</title>
 </head>
 
 <body>
-    <header>
-        <h1> FrostyKernel Language Resources </h1>
-        <nav id="navbar">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/pages/puzzle-directory.html">Puzzles</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-            </ul>
+    <header id="header" class="grid-element">
+        <a href="/index.html" id="title"> FrostyKernel</a>
+        <nav class="topnav" id="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <!-- can use active to css as a reminder of which page visitor is on-->
+            <!--<a href="pages/puzzle-directory.html" accesskey="p">Puzzles</a>
+          <a href="pages/about.html">About</a>-->
+            <a href="/pages/puzzle-directory.html" accesskey="p">Puzzles</a>
+            <a href="/pages/about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
     </header>
-    <main>
-        <h2>List of Puzzles</h2>
+    <main class="grid-element">
+        <h1>Puzzles</h1>
+        <div id="puzzle-list-div">
+            <h2>Linguistics Challenge</h2>
+            <hr>
+            <h3> Green Circle Puzzles (Easiest) </h3>
+            <ul class="lc-green-circle-list" class="puzzle-lists">
+                <li><a href="/pages/puzzles/agta.html" class="main-links">Agta</a>,  a seriously endangered minority language of the Northern Philippines.</li>
+                <li><a href="#" class="main-links">Chickasaw</a></li>
+            </ul>
+        <h2 tabindex="0">NACLO</h2>
         <hr>
         <p>
-            Below are puzzles organized by organization that initially created them. Organization by difficulty
-            matches that from the origin site.
+            More to come.
         </p>
-        <div class="princeton">
-            <ul>
-                <li><a href="/pages/puzzles/agta.html">Agta</a></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </div>
     </main>
-    <a href="https://www.google.com">Testing to Google</a>
-    <button>Change user</button>
-    <footer> Created by <a href="https://www.tylerkerns.com" target="_blank">Tyler Kerns</a></footer>
-    <!--<script src="scripts/main.js"></script>-->
+    <footer id="footer" class="grid-element"> Created by <a href="https://www.tylerkerns.com" target="_blank"
+            class="links">Tyler Kerns</a></footer>
+    <script src="/scripts/main.js"></script>
 </body>
 
 </html>

@@ -5,54 +5,16 @@
 */
 
 // Comment
-
-let iceCream = 'chocolate';
-if(iceCream === 'chocolate') {
-  alert('Yay, I love chocolate ice cream!');
-} else {
-  alert('Awwww, but chocolate is my favorite...');
+document.querySelector('h1').onclick = function () {
+  alert('Whoa, watch where you poke me!');
 }
 
-function multiply(num1,num2) {
-    let result = num1 * num2;
-    return result;
-  }
-
-  document.querySelector('h1').onclick = function() {
-    alert('Ouch! Stop poking me!');
-}
-
-let myImage = document.querySelector('img');
-
-myImage.onclick = function() {
-    let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/patches1.jpeg') {
-      myImage.setAttribute('src','images/patches2.jpeg');
-    } else {
-      myImage.setAttribute('src','images/patches1.jpeg');
-    }
-}
-
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
-
-function setUserName() {
-    let myName = prompt('Please enter your name.');
-    if(!myName) {
-      setUserName();
-    } else {
-      localStorage.setItem('name', myName);
-      myHeading.textContent = 'Mozilla is cool, ' + myName;
-    }
-  }
-
-  if(!localStorage.getItem('name')) {
-    setUserName();
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla is cool, ' + storedName;
+    x.className = "topnav";
   }
-
-  myButton.onclick = function() {
-    setUserName();
-  }
+}

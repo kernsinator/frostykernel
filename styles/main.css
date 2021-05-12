@@ -56,6 +56,13 @@ table {
     --accent-color-1: #374dd6;
     --accent-color-2: #cb37d6;
     --gray-background: #eee;
+    --white-background: #f8f8ff;
+    /* Dark mode colors */
+    --dark-background: #1b1b2f;
+    --nav-bg-color-dark: #162447;
+    --text-color-dark: #f5f5f5;
+    --accent-background-dark: #1f4068;
+    --accent-color-dark: #e43f5a;
 }
 
 /* General styling */
@@ -76,8 +83,40 @@ body {
     justify-items: center;
     align-items: stretch;
     min-height: 300px;
+    background-color: var(--white-background);
 /*    background-image: url(/assets/images/y-so-serious-white.png);*/
 }
+
+/* Dark theme styles */
+body.dark-theme {
+    color: var(--text-color-dark);
+    background: var(--dark-background);
+  }
+
+  body.dark-theme main {
+      color: var(--text-color-dark);
+  }
+
+  body.dark-theme header {
+    background-color: var(--nav-bg-color-dark) !important;
+}
+
+body.dark-theme footer {
+    background-color: var(--nav-bg-color-dark) !important;
+}
+
+  body.dark-theme a {
+    color: var(--text-color-dark);
+  }
+
+  body.dark-theme .callout {
+    background-color: var(--accent-background-dark);
+  }
+
+  body.dark-theme a.main-links:before {
+      background-color: var(--accent-color-dark);
+  }
+/* End dark theme styles */
 
 /* All header styling */
 #header {
@@ -136,8 +175,8 @@ nav {
 main {
     grid-area: content;
     max-width: 800px;
-    margin: 2em 0;
-    background-color: white;
+    margin: 0 0;
+    padding-top: 2em;
     color: black;
 }
 
@@ -278,6 +317,3 @@ footer a:hover {
 
   /* End of media queries */
 
-/* Dark theme styles */
-
-/* End dark theme styles */

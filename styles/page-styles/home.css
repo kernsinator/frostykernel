@@ -1,0 +1,9 @@
+.introduction-list {
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+    line-height: 1.15em;
+    margin: 1em auto 2em auto;
+}
+
+.introduction-list li {
+    padding: 0.3em;
+}

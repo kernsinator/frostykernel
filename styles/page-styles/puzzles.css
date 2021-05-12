@@ -1,0 +1,12 @@
+.lc-green-circle-list {
+    margin-bottom: 1em;
+    line-height: 1.25em;
+}
+
+.lc-green-circle-list li {
+    padding: 0.5em;
+}
+
+.puzzle-lists {
+    /* make line height work */
+}

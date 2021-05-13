@@ -105,6 +105,10 @@ body.dark-theme {
     background-color: var(--dark-secondary) !important;
 }
 
+body.dark-theme footer a {
+  box-shadow: 0 2px 0 var(--accent-color-dark);
+}
+
   body.dark-theme a {
     color: var(--text-color-dark);
   }
@@ -116,6 +120,13 @@ body.dark-theme {
   body.dark-theme a.main-links:before {
       background-color: var(--accent-color-dark);
   }
+
+  body.dark-theme .btn-toggle {
+    background-color: var(--dark-background);
+    color: var(--text-color-dark);
+    border: 1px solid var(--accent-color-dark);
+  }
+
 /* End dark theme styles */
 
 /* All header styling */
@@ -209,6 +220,14 @@ a {
     text-decoration: none;
     border-radius: 10%;
     transition: 0.3s;
+}
+
+.btn-toggle {
+  background-color: var(--white-background);
+  color: black;
+  border: 1px solid var(--accent-color-2);
+  border-radius: 5px;
+  height: 5vh;
 }
 
 main img{

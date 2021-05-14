@@ -101,8 +101,12 @@ body.dark-theme {
     background-color: var(--dark-secondary) !important;
 }
 
-body.dark-theme footer {
+  body.dark-theme footer {
     background-color: var(--dark-secondary) !important;
+}
+
+body.dark-theme footer a {
+  box-shadow: 0 2px 0 var(--accent-color-dark);
 }
 
   body.dark-theme a {
@@ -117,9 +121,17 @@ body.dark-theme footer {
       background-color: var(--accent-color-dark);
   }
 
+/* puzzle-layouts */
   body.dark-theme li a:hover {
     background-color: var(--accent-background-dark);
   }
+
+  body.dark-theme .btn-toggle {
+    background-color: var(--dark-background);
+    color: var(--text-color-dark);
+    border: 1px solid var(--accent-color-dark);
+  }
+
 /* End dark theme styles */
 
 /* All header styling */
@@ -127,7 +139,7 @@ body.dark-theme footer {
     grid-area: header;
     display: flex;
     align-items: center;
-    background-color: var(--dark-secondary);
+    background-color: var(--main-bg-color);
     justify-content: space-between;
     width: 100vw;
     max-width: 1000px;
@@ -213,6 +225,14 @@ a {
     text-decoration: none;
     border-radius: 10%;
     transition: 0.3s;
+}
+
+.btn-toggle {
+  background-color: var(--white-background);
+  color: black;
+  border: 1px solid var(--accent-color-2);
+  border-radius: 5px;
+  height: 5vh;
 }
 
 main img{

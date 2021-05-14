@@ -97,7 +97,7 @@ body.dark-theme {
       color: var(--text-color-dark);
   }
 
-  body.dark-theme header {
+  body.dark-theme header .header {
     background-color: var(--dark-secondary) !important;
 }
 
@@ -119,6 +119,11 @@ body.dark-theme footer a {
 
   body.dark-theme a.main-links:before {
       background-color: var(--accent-color-dark);
+  }
+
+/* puzzle-layouts */
+  body.dark-theme li a:hover {
+    background-color: var(--accent-background-dark);
   }
 
   body.dark-theme .btn-toggle {
@@ -274,6 +279,11 @@ a.main-links:hover:before {
 
 .callout h3 {
     text-align: center;
+}
+
+.text-muted {
+    font-size: 0.8rem;
+    color: gray;
 }
 
 /* End of main styling */

@@ -101,6 +101,11 @@ body.dark-theme {
     background-color: var(--dark-secondary) !important;
 }
 
+/* Temporary fix for puzzle-template header which is not targeted by the header selector */
+body.dark-theme .header {
+  background-color: var(--dark-secondary) !important;
+}
+
   body.dark-theme footer {
     background-color: var(--dark-secondary) !important;
 }

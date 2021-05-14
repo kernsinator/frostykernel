@@ -97,7 +97,7 @@ body.dark-theme {
       color: var(--text-color-dark);
   }
 
-  body.dark-theme header {
+  body.dark-theme header .header {
     background-color: var(--dark-secondary) !important;
 }
 
@@ -115,6 +115,10 @@ body.dark-theme footer {
 
   body.dark-theme a.main-links:before {
       background-color: var(--accent-color-dark);
+  }
+
+  body.dark-theme li a:hover {
+    background-color: var(--accent-background-dark);
   }
 /* End dark theme styles */
 
@@ -255,6 +259,11 @@ a.main-links:hover:before {
 
 .callout h3 {
     text-align: center;
+}
+
+.text-muted {
+    font-size: 0.8rem;
+    color: gray;
 }
 
 /* End of main styling */

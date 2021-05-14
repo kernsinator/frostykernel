@@ -1,150 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 
+<head>
     <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/styles/page-styles/puzzle-styles/puzzle-generic.css" rel="stylesheet" 
-    type="text/css" media="all">
-    <link href="/styles/page-styles/puzzle-styles/agta.css" rel="stylesheet" 
-    type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-generic.css" rel="stylesheet" type="text/css" media="all">
     <link href="/styles/page-styles/puzzle-styles/agta.css" rel="stylesheet" type="text/css" media="all">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
-
-    <title>Agta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrostyKernel</title>
 </head>
-<body>
-    <header>
-        <ul class='header'>
-            <li class='btn-toggle'><a href="#">Settings</a></li>
-            <li><a class="" href="/pages/about.html">About</a></li>
-            <li><a href="/pages/puzzle-directory.html" accesskey='p'>Puzzles</a></li>
-            <li><a class='active' href="/index.html">Home</a></li>
-            <li class='brand'><a href="/index.html">FrostyKernel</a></li>
-        </ul>
+
+<body class="light-theme"> <!-- Necessary for dark mode to work -->
+    <header id="header" class="grid-element">
+        <a href="/index.html" id="title"> FrostyKernel</a>
+        <nav class="topnav" id="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/pages/puzzle-directory.html" accesskey="p">Puzzles</a>
+            <a href="/pages/about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
     </header>
-
-    <main>
-        <div class="language-info">
-            <h1 class='lang-name'>Agta</h1>
-            <h4 class="attribution">Adapted by Tom Payne from Healey, Phyllis M. 1960. An Agta grammar. Manila: Bureau of printing.</h4>
-
-            <p>The following list of words is from the Agta language of the Central Cagayan Valley in the Northern island of Luzon, in the Philippines. There are now only about 600 speakers of this variety of Agta, although there are perhaps 10,000 people in the Philippines who speak other varieties also known as Agta. The Agta people now speak an Austronesian language similar to other languages spoken in the Philippines. However, they are descended from the Melanesian people who were present in the Philippines before the Austronesian peoples arrived. The Agta language is now seriously endangered.</p>
-        </div>
-
-        <hr class='puzzle-divider'>
-
-        <div class="puzzle">
-            
-            <div class="puzzle-clues">
-                <table>
-                    <tr>
-                        <th></th>
-                        <th>Agta</th>
-                        <th>English</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>wer</td>
-                        <td>creek</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>balabahuy</td>
-                        <td>little pig</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>talobag</td>
-                        <td>beetle</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>bakbakat</td>
-                        <td>granny</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>palapirak</td>
-                        <td>money</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>bahuy</td>
-                        <td>pig</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>bag</td>
-                        <td>loincloth</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>walawer</td>
-                        <td>little creek</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>balabag</td>
-                        <td>little loincloth</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>takki</td>
-                        <td>leg</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>labang</td>
-                        <td>patch</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="puzzle-input">
-                <form>
-                    <label for="little-leg">little leg</label>
-                    <input type="text" id="little-leg" name="little-leg" onkeyup='checkAnswers()'>
-                    <label for="money">money</label>
-                    <input type="text" id="money" name="money" onkeyup='checkAnswers()'>
-                    <label for="little-beetle">little beetle <small class="text-muted">this is the word for "ladybug"</small></label>
-                    <input type="text" id="little-beetle" name="little-beetle" onkeyup='checkAnswers()'>
-                    <label for="little-patch">little patch</label>
-                    <input type="text" id="little-patch" name="little-patch" onkeyup='checkAnswers()'>
-                    <label for="little-granny">little granny</label>
-                    <input type="text" id="little-granny" name="little-granny" onkeyup='checkAnswers()'>
-                </form> 
-            </div> 
-
-            <div class="puzzle-feedback">
-                <label for="correct">Correct: <span id='num-correct'>0</span>/5</label>
-                <progress id="correct" value="0" max="5"> 0/5 </progress> 
-            </div>
-        </div>
-    
+    <main class="grid-element">
+        <h1>Agta</h1>
+        <p class="puzzle-caption"> Adapted by Tom Payne from Healey, Phyllis M. 1960. An Agta grammar. Manila: Bureau of printing. 
+        </p>
+        <p>  The following list of words is from the Agta language of the Central Cagayan Valley in the Northern island of Luzon, in the Philippines. There are now only about 600 speakers of this variety of Agta, although there are perhaps 10,000 people in the Philippines who speak other varieties also known as Agta. The Agta people now speak an Austronesian language similar to other languages spoken in the Philippines. However, they are descended from the Melanesian people who were present in the Philippines before the Austronesian peoples arrived. The Agta language is now seriously endangered </p>
+              <ul id="agta-list1">
+                  <li>wer</li>
+                  <li>balabahuy</li>
+                  <li>talobag</li>
+                  <li>bakbakat</li>
+                  <li>test</li>
+                  <li>test</li>
+              </ul>
+              <ul id="agta-list2">
+                  <li>creek</li>
+                  <li>little pig</li>
+                  <li>beetle</li>
+                  <li>granny</li>
+                  <li>Something</li>
+                  <li>Something</li>
+              </ul>
         <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
-
-        <div class="neighbor-btn-container">
-            <button class="neighbor-btn previous-btn" disabled='disabled'>Previous</button>
-            <button class='neighbor-btn next-btn'>Next</button>
-        </div>
     </main>
-
-    <div class="push"></div>
-    <footer>
-        <h5>Created by Tyler Kerns</h5>
-    </footer>
-
-    <!--SCRIPTS-->
-
+    <footer id="footer" class="grid-element"> Created by <a href="https://www.tylerkerns.com" target="_blank"
+            class="links">Tyler Kerns</a></footer>
     <script src="/scripts/main.js"></script>
-    <script src="/scripts/agta.js"></script>
-
-    <!--END SCRIPTS-->
 </body>
+
 </html>

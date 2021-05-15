@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-generic.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/agta.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+
+    <title>Puzzle Template</title>
+    <link rel="icon" href="/assets/images/puzzle-favicon.png">
+</head>
+<body class='light-theme'>
+    <header class='header'>
+        <ul class='header'>
+            <li class='btn-toggle'><a href="">Settings</a></li> <!--Eventually this will be a dropdown, but for testing this is just the dark-mode button.-->
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="/pages/puzzle-directory.html">Puzzles</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li class='brand'><a href="/index.html">FrostyKernel</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Language Name</h1>
+            <h4 class="attribution">Attribution</h4>
+
+            <p>A paragraph describing the history, speakers, geography, and current endangered status of the language. Information about how to complete the puzzle may be included here &mdash; I wouldn't know. I'm too lazy to go through the webpages and find out. Ultimately this just needs to take up the same amount of space, more or less, as the paragraph preceding the Agta puzzle.</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues template">
+                <h4>Information that the user needs to solve the puzzle goes here. Remove "template" class to get rid of dashed border.</h4>
+            </div>
+
+            <div class="puzzle-input template">
+                <h4>Elements for user input go here. Remove "template" class to get rid of dashed border.</h4>
+            </div> 
+
+            <div class="puzzle-feedback template">
+                <h4>Feedback from user input goes here (how many answers are correct?)</h4>
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy YEAR, Copyright Owner</p>
+
+        <div class="neighbor-btn-container">
+            <button class="neighbor-btn previous-btn">Previous</button>
+            <button class='neighbor-btn next-btn'>Next</button>
+        </div>
+    </main>
+
+    
+
+    <div class="push"></div>
+    <footer>
+        <h5>Created by <a href="https://www.tylerkerns.com" target="_blank"
+            class="links">Tyler Kerns</a> and <a href="https://www.sam-frost.com" target="_blank"
+            class="links">Sam Frost</a></h5>
+    </footer>
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

@@ -1,5 +1,5 @@
 
-
+/* ========== GRID LAYOUT ========== */
 
 body {
     line-height: 1.6;
@@ -17,7 +17,7 @@ header {
 
 header,
 footer {
-    background-color:rgb(124, 55, 214);
+    background-color:var(--main-bg-color);
     color: white;
     display: flex;
     justify-content: center;
@@ -42,24 +42,38 @@ footer,
 /* ========== NAVBAR ========== */
 
 
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0 1em;
-    overflow: hidden;
     background-color:var(--main-bg-color);
     width: 100%;
+    position: relative;
   }
   
-  li {
+  header li {
     float: right;
   }
 
-  li.brand {
+  header li:hover {
+    background-color: var(--main-bg-color-active);
+  }
+
+  header li.brand {
       float: left;
+      width: 3em;
+      padding: 0em 1em;
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      height: 3.4em;
+  }
+
+  header li.brand:hover {
+    background-color: var(--main-bg-color-active);
   }
   
-  li a {
+  header li a {
     display: block;
     color: white;
     text-align: center;
@@ -69,13 +83,17 @@ ul {
     border-radius: 0;
   }
 
-  li a:hover {
-    background-color:rgb(51, 23, 87);
-  } 
+  header img {
+      margin-top: 0.2em;
+  }
 
-  body.dark-theme li a:hover {
+  body.dark-theme header li a:hover {
       background-color: var(--accent-background-dark);
   }
+
+  body.dark-theme header li:hover {
+    background-color: var(--accent-background-dark);
+}
 
   .brand:hover {
       background-color: inherit;
@@ -84,6 +102,8 @@ ul {
   .btn-toggle {
     background-color: var(--main-bg-color);
     border: none;
+    border-radius: 0;
+    height: auto;
   }
 
   body.dark-theme .btn-toggle {
@@ -209,15 +229,27 @@ table {
 .neighbor-btn {
     border-radius: 0;
     border: none;
-    width: 15em;
-    height: 3em;
+    width: 10em;
+    height: 2em;
     background-color: lightgray;
+    color: black;
+    text-align: center;
+    position: relative;
+    padding: 0.5em;
+    font-size: 0.85rem;
+}
+
+.neighbor-btn span {
+    color: black !important;
+}
+
+.neighbor-btn:hover span {
+    color: white !important;
 }
 
 .neighbor-btn:hover {
     background: rgb(66, 66, 66);
     color: white;
-    cursor: pointer;
 }
 
 .neighbor-btn:disabled:hover {

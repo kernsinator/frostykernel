@@ -7,14 +7,14 @@
 
     <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
     <link href="/styles/page-styles/puzzle-styles/puzzle-generic.css" rel="stylesheet" type="text/css" media="all">
-    <link href="/styles/page-styles/puzzle-styles/agta.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/yaqui.css" rel="stylesheet" type="text/css" media="all">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
     <link rel="stylesheet" href="/styles/page-styles/megamenu.css">
 
-    <title>Puzzle Template</title>
+    <title>Yaqui</title>
     <link rel="icon" href="/assets/images/FKlogo.png">
 </head>
 <body class='light-theme'>
@@ -36,7 +36,7 @@
                             <li><a>Swahili</a></li>
                             <li><a>Tajik</a></li>
                             <li><a>Turkish</a></li>
-                            <li><a>Yaqui</a></li>
+                            <li><a href='/pages/puzzles/yaqui.html'>Yaqui</a></li>
                         </ul>
                     </div>
                     <div class="megamenu-col">
@@ -80,40 +80,89 @@
                 </div>
             </li>
             <li><a href="/index.html">Home</a></li>
-            <li class='brand'><a href="/index.html">FrostyKernel</a></li>
+            <li class='brand'><img src="/assets/images/FKlogo.png" alt="FrostyKernel logo"></li>
         </ul>
     </header>
 
     <main>
         <div class="language-info">
-            <h1 class='lang-name'>Language Name</h1>
-            <h4 class="attribution">Attribution</h4>
+            <h1 class='lang-name'>Yaqui</h1>
 
-            <p>A paragraph describing the history, speakers, geography, and current endangered status of the language. Information about how to complete the puzzle may be included here &mdash; I wouldn't know. I'm too lazy to go through the webpages and find out. Ultimately this just needs to take up the same amount of space, more or less, as the paragraph preceding the Agta puzzle.</p>
+            <p>Yaqui (also known as Yoeme) is an Native American language currently spoken by about 16,400 people in Northern Mexico and southern Arizona. It is a member of the Uto-Aztecan language family. This is one of the geographically most widespread language families in the Americas, extending from El Salvador (Pipil) to the state of Oregon (Northern Paiute), and from Southern California (Cahuilla, Luiseño and others) to Colorado (Ute). Nahuatl (see <a class='puzzle-links' href='#'>the classical Nahuatl puzzle</a>) is another Uto-Aztecan language. Today there are many varieties of Nahuatl spoken in Mexico.</p>
+
+            <p>The following are eight emphatic sentences in the Yaqui language. Your task is to match the correct English translations, given below in random order, to each Yaqui sentence. For this puzzle, you must fill all the blanks before you can check your answers.</p>
         </div>
 
         <hr class='puzzle-divider'>
 
         <div class="puzzle">
             
-            <div class="puzzle-clues template">
-                <h4>Information that the user needs to solve the puzzle goes here. Remove "template" class to get rid of dashed border.</h4>
-            </div>
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th>Yaqui Sentences</th>
+                        <th class='cell-center'>Letter of correct translation</th>
+                        <th>English translations</th>
+                    </tr>
+                    <tr>
+                        <td>1. Inepo siika.</td>
+                        <td class='cell-center'><input id='q1' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>A. You helped me.</td>
+                    </tr>
+                    <tr>
+                        <td>2. Empo nee aniak.</td>
+                        <td class='cell-center'><input id='q2' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>B. You danced</td>
+                    </tr>
+                    <tr>
+                        <td>3. Inepo apo'ik aniak.</td>
+                        <td class='cell-center'><input id='q3' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>C. I saw you.</td>
+                    </tr>
+                    <tr>
+                        <td>4. Inepo apo'ik vichak.</td>
+                        <td class='cell-center'><input id='q4' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>D. I saw him.</td>
+                    </tr>
+                    <tr>
+                        <td>5. Inepo enchi vichak.</td>
+                        <td class='cell-center'><input id='q5' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>E. I helped you.</td>
+                    </tr>
+                    <tr>
+                        <td>6. Inepo enchi aniak.</td>
+                        <td class='cell-center'><input id='q6' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>F. I helped him.</td>
+                    </tr>
+                    <tr>
+                        <td>7. Empo ye'ek.</td>
+                        <td class='cell-center'><input id='q7' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>G. He saw you.</td>
+                    </tr>
+                    <tr>
+                        <td>8. Aapo enchi vichak.</td>
+                        <td class='cell-center'><input id='q8' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>H. I left you.</td>
+                    </tr>
+                </table>
 
-            <div class="puzzle-input template">
-                <h4>Elements for user input go here. Remove "template" class to get rid of dashed border.</h4>
-            </div> 
-
-            <div class="puzzle-feedback template">
-                <h4>Feedback from user input goes here (how many answers are correct?)</h4>
+                <div class="puzzle-feedback">
+                    <div class='check-answers-box'>
+                        <button id='check-button' onclick='checkAnswers()' disabled>Check Answers</button>
+                        <label id='correct-output' for="correct">Correct: <span id='num-correct'>0</span>/8</label>
+                    </div>
+                    
+                    
+                    <progress id="correct" value="0" max="8"> 0/8 </progress> 
+                </div>
             </div>
         </div>
     
-        <p class="copyright">Copyright &copy YEAR, Copyright Owner</p>
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
 
         <div class="neighbor-btn-container">
-            <button class="neighbor-btn previous-btn">Previous</button>
-            <button class='neighbor-btn next-btn'>Next</button>
+            <a class="neighbor-btn previous-btn" href='/pages/puzzles/agta.html'><span>Previous</span></a>
+            <a class='neighbor-btn next-btn'><span>Next</span></a>
         </div>
     </main>
 
@@ -129,6 +178,7 @@
     <!--SCRIPTS-->
 
     <script src="/scripts/main.js"></script>
+    <script src='/scripts/yaqui.js'></script>
 
     <!--END SCRIPTS-->
 </body>

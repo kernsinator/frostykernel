@@ -6,7 +6,7 @@
     position: absolute;
     width: 100vw;
     left: 0;
-    top: 4em;
+    top: 0em;
     background-color: var(--accent-color-1);
     color: var(--white-background);
     visibility: hidden;
@@ -107,3 +107,9 @@ body.dark-theme .megamenu-content a:hover {
 .black {
     color: black;
 }
+
+@media screen and (max-width: 600px) {
+    .megamenu-content {
+        display: none;
+    }
+  }

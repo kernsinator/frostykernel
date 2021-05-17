@@ -15,17 +15,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+    <link rel="stylesheet" href="/styles/page-styles/megamenu.css">
 
     <title>Agta</title>
+    <link rel="icon" href="/assets/images/FKlogo.png">
 </head>
 <body class="light-theme">
     <header>
         <ul class='header'>
             <li class='btn-toggle'><a href="#">Settings</a></li>
             <li><a class="" href="/pages/about.html">About</a></li>
-            <li><a href="/pages/puzzle-directory.html" accesskey='p'>Puzzles</a></li>
+            <li class='megamenu-btn'>
+                <a href='/pages/puzzle-directory.html'>Puzzles</a>
+                <div class="megamenu-content">
+                    <a class='puzzle-directory-link' href="/pages/puzzle-directory.html">Puzzle Directory</a>
+                    <div class="megamenu-col">
+                        <h3>Green Circle <span class='difficulty-symbol green'>●</span></h3>
+                        <ul>
+                            <li><a href='/pages/puzzles/agta.html'>Agta</a></li>
+                            <li><a>Chickasaw</a></li>
+                            <li><a>Kurdish</a></li>
+                            <li><a>Nahuatl</a></li>
+                            <li><a>Swahili</a></li>
+                            <li><a>Tajik</a></li>
+                            <li><a>Turkish</a></li>
+                            <li><a href='/pages/puzzles/yaqui.html'>Yaqui</a></li>
+                        </ul>
+                    </div>
+                    <div class="megamenu-col">
+                        <h3>Blue Square <span class='difficulty-symbol blue'>■</span></h3>
+                        <ul>
+                            <li><a>Archi</a></li>
+                            <li><a>Czech</a></li>
+                            <li><a>Endo</a></li>
+                            <li><a>French</a></li>
+                            <li><a>Hausa</a></li>
+                            <li><a>Hawaiian</a></li>
+                            <li><a>Indonesian</a></li>
+                            <li><a>Luvian</a></li>
+                            <li><a href=''>Maasai</a></li>
+                            <li><a href=''>Quechua</a></li>
+                            <li><a href=''>Sanskrit</a></li>
+                            <li><a href=''>Shugnan</a></li>
+                            <li><a href=''>Swahili</a></li>
+                        </ul>
+                    </div>
+                    <div class="megamenu-col">
+                        <h3>Black Diamond <span class='difficulty-symbol black'>◆</span></h3>
+                        <ul>
+                            <li><a>Babylonian</a></li>
+                            <li><a>Georgian</a></li>
+                            <li><a>Orkhono-Yeniseyan</a></li>
+                            <li><a>Samoan</a></li>
+                            <li class='megamenu-padding'> </li>
+                        </ul>
+
+                        <hr>
+
+                        <h3>Double Black Diamond <span class='difficulty-symbol black'>◆◆</span></h3>
+                        <ul>
+                            <li><a>Amharic</a></li>
+                            <li><a>Ancient Inscriptions</a></li>
+                            <li><a>Thai</a></li>
+                            <li><a>Tocharian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
             <li><a class='active' href="/index.html">Home</a></li>
-            <li class='brand'><a href="/index.html">FrostyKernel</a></li>
+            <li class='brand'><img src="/assets/images/FKlogo.png" alt="FrostyKernel logo"></li>
         </ul>
     </header>
 
@@ -130,8 +188,8 @@
         <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
 
         <div class="neighbor-btn-container">
-            <button class="neighbor-btn previous-btn" disabled='disabled'>Previous</button>
-            <button class='neighbor-btn next-btn'>Next</button>
+            <a class="neighbor-btn previous-btn" href='#' disabled><span>Previous</span></a>
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/yaqui.html'><span>Next</span></a>
         </div>
     </main>
 

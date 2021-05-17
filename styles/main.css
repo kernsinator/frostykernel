@@ -127,6 +127,11 @@ body.dark-theme footer a {
     border: 1px solid var(--accent-color-dark);
   }
 
+  body.dark-theme .arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  }
+
 /* End dark theme styles */
 
 /* All header styling */

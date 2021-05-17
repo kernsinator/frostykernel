@@ -101,11 +101,11 @@ body.dark-theme {
     background-color: var(--dark-secondary) !important;
 }
 
-  body.dark-theme footer {
+  body.dark-theme #footer {
     background-color: var(--dark-secondary) !important;
 }
 
-body.dark-theme footer a {
+body.dark-theme #footer a {
   box-shadow: 0 2px 0 var(--accent-color-dark);
 }
 

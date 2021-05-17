@@ -3,28 +3,20 @@
 
 <head>
   <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/styles/page-styles/home.css" rel="stylesheet" type="text/css" media="all">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FrostyKernel</title>
+  <!-- Scripts for shared header and footer-->
+  <script src="/components/header.js" type="text/javascript" defer></script>
+  <script src="/components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body class="light-theme">
-  <header id="header" class="grid-element">
-    <a href="index.html" id="title"> FrostyKernel</a>
-    <nav class="topnav" id="navbar">
-      <a href="index.html" class="active">Home</a>
-      <!-- can use active to css as a reminder of which page visitor is on-->
-      <a href="pages/puzzle-directory.html" accesskey="p">Puzzles</a>
-      <a href="pages/about.html">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </nav>
-
-  </header>
+  <header-component id="header"></header-component> <!-- Include to insert shared header-->
   <main class="test" class="grid-element">
     <h2>Why does this site exist</h2>
     <hr>
@@ -48,8 +40,7 @@
       <a href="#" class="main-links">princeton</a>
     </div>
   </main>
-  <footer id="footer" class="grid-element"> Created by <a href="https://www.tylerkerns.com" target="_blank"
-      class="links">Tyler Kerns</a></footer>
+  <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
   <script src="scripts/main.js"></script>
 </body>
 

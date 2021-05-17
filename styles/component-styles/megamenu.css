@@ -1,0 +1,109 @@
+.megamenu-btn {
+    list-style: none;
+}
+
+.megamenu-content {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    top: 4em;
+    background-color: var(--accent-color-1);
+    color: var(--white-background);
+    visibility: hidden;
+    opacity: 0;
+    padding: 0 0 0.5em 0;
+    z-index: 10;
+}
+
+body.dark-theme .megamenu-content {
+    background-color: var(--accent-background-dark);
+    color: var(--text-color-dark);
+}
+
+.megamenu-content h3 {
+    display: block;
+    padding: 0em 2em 0em 1.5em;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.megamenu-content li {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.megamenu-content li:hover {
+    background-color: var(--accent-color-2);
+    text-decoration: underline;
+}
+
+body.dark-theme .megamenu-content li:hover,
+body.dark-theme .megamenu-content a:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.megamenu-content li a {
+    text-align: left;
+    margin: 0 0 0 1em;
+    padding: 0.5em 0;
+}
+
+.megamenu-content li a:hover {
+    background-color: inherit;
+}
+
+
+.megamenu-btn:hover .megamenu-content {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0ms, opacity 150ms;
+}
+
+.megamenu-col {
+    float: left;
+    width: 33.3%;
+
+}
+
+.megamenu-col hr {
+    border-color: white;
+}
+
+.megamenu-content ul {
+    margin-bottom: 5em !important;
+}
+
+.puzzle-directory-link {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bolder;
+    transition: none;
+}
+
+.puzzle-directory-link:hover {
+    text-decoration: underline;
+}
+
+.megamenu-padding {
+    margin-bottom: 2em !important;
+}
+
+.difficulty-symbol {
+    margin-left: 0.25em;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.black {
+    color: black;
+}

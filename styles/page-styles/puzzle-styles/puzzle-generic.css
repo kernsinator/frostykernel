@@ -1,9 +1,0 @@
-.puzzle-caption {
-    font-style: italic;
-    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
-}
-
-.copyright {
-  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
-  text-align: center;
-}

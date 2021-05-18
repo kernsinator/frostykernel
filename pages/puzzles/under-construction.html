@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-generic.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/agta.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+    <link rel="stylesheet" href="/styles/page-styles/megamenu.css">
+
+    <!-- Scripts for shared header and footer-->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <title>Puzzle Template</title>
+    <link rel="icon" href="/assets/images/FKlogo.png">
+</head>
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>This puzzle is under construction</h1>
+            <h4 class="attribution">Thank you for your patience as we work to get it up and running.</h4>
+
+            <p>For now, <a class='main-links' href='/pages/puzzle-directory.html'>click here</a> to return to the directory and select a different challenge.</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle template">
+            
+            <p class='under-construction-box'><strong>
+                
+                <span id="under-construction-msg">
+                    <i class="fa fa-exclamation-triangle white" aria-hidden="true"></i>
+                        CONSTRUCTION ZONE
+                    <i class="fa fa-exclamation-triangle white" aria-hidden="true"></i>
+                </span> 
+            </strong></p>
+            <p class="attribution">You know it'll be totally rad when it's done though.</p>
+        </div>
+
+        <div class="neighbor-btn-container">
+            <button class="neighbor-btn previous-btn" disabled>Previous</button>
+            <button class='neighbor-btn next-btn' disabled>Next</button>
+        </div>
+    </main>
+
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

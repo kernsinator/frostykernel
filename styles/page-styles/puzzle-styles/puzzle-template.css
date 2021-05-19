@@ -94,7 +94,7 @@ table {
     color: black;
     text-align: center;
     position: relative;
-    padding: 0.2em;
+    padding: 0.2em !important;
     font-size: 0.85rem;
 }
 

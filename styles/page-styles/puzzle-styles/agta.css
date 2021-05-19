@@ -1,0 +1,51 @@
+/* GRID LAYOUT FOR PUZZLE */
+
+.puzzle {
+    display: grid;
+    grid-template-columns: 3fr 4fr; /* Change this to modify width of clues and input sections */
+    grid-template-areas: "clues inputs"
+        "clues feedback";
+}
+
+.puzzle-clues {
+    grid-area: clues;
+    padding: 1.5em;
+}
+
+.puzzle-input {
+    grid-area: inputs;
+    padding: 1em;
+}
+
+.puzzle-feedback {
+    grid-area: feedback;
+    padding: 1em;
+}
+
+/* GENERAL STYLES */
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input {
+    width: 100%;
+}
+
+.puzzle-feedback {
+    text-align: center;
+}
+
+/* All this mess is just to change the color of the progress bar */
+
+progress::-moz-progress-bar { background: #7c37d6; }
+progress::-webkit-progress-value { background: #7c37d6; }
+progress { color: #7c37d6; }
+
+progress {
+    border-radius: 0;
+    width: 80%;
+    height: 1.5em; 
+}
+

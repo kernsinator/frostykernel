@@ -20,9 +20,9 @@ h1.lang-name {
 .attribution {
     font-style: italic;
     font-weight: 400;
-    font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(2px + (15 - 12) * ((100vw - 300px) / (1600 - 500)));
     color: gray; 
-    margin-top: -1.5em;
+    margin-top: -1.25em !important;
     padding: 0;
 }
 

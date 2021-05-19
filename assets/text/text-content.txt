@@ -8,4 +8,4 @@
  
  We are Tyler and Sam. About a decade ago we discovered some of these online language puzzles and added them to our list of hobbies. Other hobbies included Xbox and pizza. Remembering the fun we had solving these puzzles, as well as the frustration of the broken site, we decided to recreate the puzzles here. 
  
- Tyler has [a website] which directs students to useful programming resources and also documents his own learning experience. Sam can be reached via [his site], which has nothing to do with either programming or linguistics but is still pretty neat. 
+ Tyler has [a website] which directs students to useful programming resources and also documents his own learning experience. Sam can be reached via [contact@sam-frost.com], and his site [https://sam-frost.com] has nothing to do with either programming or linguistics but is still pretty neat. 

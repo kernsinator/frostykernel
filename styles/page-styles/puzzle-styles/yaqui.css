@@ -63,7 +63,7 @@ input {
 }
 
 #correct-output {
-    display: inline;
+    display: block;
     margin-right: 5em;
 }
 

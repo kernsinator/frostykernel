@@ -93,24 +93,16 @@ table {
 }
 
 .neighbor-btn {
-    border-radius: 0;
+    border-radius: 5px;
     border: none;
     width: 10em;
     height: 2em;
     background-color: lightgray;
-    color: black;
+    color: black !important;
     text-align: center;
     position: relative;
-    padding: 0.2em !important;
+    padding-top: 1em;
     font-size: 0.85rem;
-}
-
-.neighbor-btn span {
-    color: black !important;
-}
-
-.neighbor-btn:hover span {
-    color: white !important;
 }
 
 .neighbor-btn:hover {
@@ -118,13 +110,13 @@ table {
     color: white;
 }
 
-.neighbor-btn:disabled {
+.disabled {
     background: lightgray;
     color: rgba(0, 0, 0, 0.247);
     cursor: default;
 }
 
-.neighbor-btn:disabled:hover {
+.neighbor-btn.disabled:hover {
     background: lightgray;
     color: rgba(0, 0, 0, 0.247);
     cursor: default;

@@ -46,7 +46,7 @@ small.text-muted {
 .puzzle {
     display: grid;
 
-    /* Below is an example grid layout (Agta Puzzle). Modify as necessary for the puzzle at hand. */
+    /* Below is an example grid layout (Agta Puzzle). Copy to unique CSS file and modify as necessary for the puzzle at hand. */
     /* grid-template-columns: 3fr 4fr; */
     /* grid-template-areas: "clues inputs"
         "clues feedback"; */
@@ -72,6 +72,7 @@ body.dark-theme table, tr, td, th {
 
 th {
     text-align: left;
+    font-weight: bold;
 }
 
 td:first-of-type {

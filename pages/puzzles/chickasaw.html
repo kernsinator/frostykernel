@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/chickasaw.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+    <link rel="stylesheet" href="/styles/component-styles/megamenu.css">
+
+    <!-- Scripts for shared header and footer-->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <title>Chickasaw</title>
+    <link rel="shortcut icon" type='image/jpg' href="/assets/images/FKlogo.png">
+</head>
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Chickasaw</h1>
+            <p class="attribution">by Tom Payne, with thanks to Catherine Willmond and Pamela Munro.</p>
+
+            <p>Chickasaw is a Native American language of the Muskogean language family. Currently, there are about 3,000 fluent speakers of Chickasaw, most of whom live in Oklahoma. However, the homeland of the Chickasaw people at the time of the arrival of Europeans in North America was in what is now Alabama and Mississippi. Other Muskogean languages include Choctaw, Alabama, Natchez and Seminole. Chickasaw is most closely related to Choctaw.</p>
+
+            <p>Note: The sound represented as ã is a "nasalized" vowel. It is pronounced like the "a" in "father," but with the air passing through the nose, as in the French word "ban."</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <table>
+                <tr>
+                    <th>Chickasaw</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>Ofi'at kowi'ã lhiyohli.</td>
+                    <td>The dog chases the cat.</td>
+                </tr>
+                <tr>
+                    <td>Kowi'at ofi'ã lhiyohli.</td>
+                    <td>The cat chases the dog.</td>
+                </tr>
+                <tr>
+                    <td>Ofi'at shoha.</td>
+                    <td>The dog stinks</td>
+                </tr>
+                <tr>
+                    <td>Ihooat hattakã hollo.</td>
+                    <td>The woman loves the man.</td>
+                </tr>
+                <tr>
+                    <td>Lhiyohlili.</td>
+                    <td>I chase her/him.</td>
+                </tr>
+                <tr>
+                    <td>Salhiyohli.</td>
+                    <td>She/he chases me.</td>
+                </tr>
+                <tr>
+                    <td>Hilha.</td>
+                    <td>She/he dances.</td>
+                </tr>
+            </table>
+
+            
+
+            <div class="input-box">
+
+                <p class='instructions'>Now you can translate the following into Chickasaw. Since the nasalized "ã" is very important in Chickasaw, you must enter it where appropriate. There are several ways you can do this, including just cutting and pasting this -» ã. The apostrophe (') in some Chickasaw words is also very important. You also need to capitalize and punctuate each sentence for it to count.</p>
+
+                <form>
+                    <label for="q1">The man loves the woman.</label>
+                    <input type="text" id="q1" name="q1" onkeyup='checkAnswers()'>
+                    <label for="q2">The cat stinks.</label>
+                    <input type="text" id="q2" name="q2" onkeyup='checkAnswers()'>
+                    <label for="q3">I love her/him.</label>
+                    <input type="text" id="q3" name="q3" onkeyup='checkAnswers()'>
+                </form>
+            </div>
+
+            
+
+            <div class="input-box">
+
+                <p class='instructions'>Translate the following into English:</p>
+
+                <form action="">
+                    <label for="q4">Ihooat sahollo.</label>
+                    <input type="text" id="q4" name="q4" onkeyup='checkAnswers()'>
+                    <label for="q5">Ofi'at hilha.</label>
+                    <input type="text" id="q5" name="q5" onkeyup='checkAnswers()'>
+                    <label for="q6">Kowi'ã lhiyohlili.</label>
+                    <input type="text" id="q6" name="q6" onkeyup='checkAnswers()'>
+                </form>      
+            </div>
+
+            <div class="puzzle-feedback">
+                <div class='check-answers-box'>
+                    <label id='correct-output' for="correct">Correct: <span id='num-correct'>0</span>/6</label>
+                </div>
+                
+                
+                <progress id="correct" value="0" max="6"> 0/6 </progress> 
+            </div>
+
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <a class="neighbor-btn previous-btn" href='/pages/puzzles/agta.html'><span>Previous</span></a>
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/yaqui.html'><span>Next</span></a>
+        </div>
+    </main>
+
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/chickasaw.js'></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

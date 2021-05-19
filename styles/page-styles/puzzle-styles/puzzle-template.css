@@ -35,6 +35,12 @@ hr.puzzle-divider {
   text-align: center;
 }
 
+small.text-muted {
+    color: gray;
+    font-size: 0.75rem;
+    margin-left: 0.5em;
+}
+
 /* Puzzle Section */
 
 .puzzle {

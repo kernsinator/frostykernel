@@ -209,6 +209,10 @@ h2 {
     font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
 }
 
+.index-header2 {
+  margin-bottom: 1em;;
+}
+
 h3 {
     margin-bottom: 1em;
 }

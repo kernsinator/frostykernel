@@ -6,7 +6,8 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer id="footer" class="grid-element"> Created by <a href="https://www.tylerkerns.com" target="_blank"
-      class="links">Tyler Kerns</a></footer>
+      class="links">Tyler Kerns</a> and <a href="https://www.sam-frost.com" target="_blank"
+      class="links">Sam Frost</a></footer>
     `;
   }
 }

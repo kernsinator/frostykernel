@@ -19,7 +19,7 @@ class Header extends HTMLElement {
                         <h3>Green Circle <span class='difficulty-symbol green'>●</span></h3>
                         <ul>
                             <li><a href='/pages/puzzles/agta.html'>Agta</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Chickasaw</a></li>
+                            <li><a href='/pages/puzzles/chickasaw.html'>Chickasaw</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Kurdish</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Nahuatl</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Swahili</a></li>

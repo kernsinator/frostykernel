@@ -1,0 +1,66 @@
+.puzzle {
+    display: flex;
+}
+
+td {
+    text-align: left !important;
+}
+
+table {
+    width: 50% !important;
+}
+
+input {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+label {
+    margin-bottom: 0.25em !important;
+}
+
+.instructions {
+    font-size: 1rem;
+    margin-top: 2em !important;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.instructions:first-of-type {
+    margin-top: 0 !important;
+}
+
+.input-box {
+    padding: 2em;
+    width: 45% !important;
+    float: right !important;
+}
+
+/* FEEBACK / PROGRESS BAR */
+
+.puzzle-feedback {
+    text-align: center;
+    padding: 1em;
+}
+
+progress::-moz-progress-bar { background: #7c37d6; }
+progress::-webkit-progress-value { background: #7c37d6; }
+progress { color: #7c37d6; }
+
+progress {
+    margin-top: 1em;
+    border-radius: 0;
+    width: 80%;
+    height: 1.5em; 
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100% !important;
+    }
+
+    .input-box {
+        float: left;
+    }
+}

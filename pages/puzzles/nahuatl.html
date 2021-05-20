@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+    <link href="/styles/page-styles/puzzle-styles/nahuatl.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="/styles/component-styles/megamenu.css">
+
+    <!-- Scripts for shared header and footer-->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <title>Classical Nahuatl</title>
+    <link rel="icon" href="/assets/images/FKlogo.png">
+</head>
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Classical Nahuatl</h1>
+            <p class="attribution">Puzzle adapted by Tom Payne, from Farmer, Ann and Richard A. Demers. 1996. A Linguistics Workbook. Cambridge, Massachusetts: MIT Press.</p>
+
+            <p>In many languages of the world, whole sentences can be expressed with a single word. This is true in Classical Nahuatl, the language of the Aztec Empire that flourished in what is now Mexico between 1325 and 1522 CE. In the following puzzle, try to divide each Nahuatl word into its various parts, and then fill in the translations at the end. Note: The symbol ":" after a vowel simply means that the vowel is pronounced longer than otherwise. It does NOT necessarily mean that the word must be divided at that point.</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <table>
+                <tr>
+                    <th>Nahuatl</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>nicho:ka</td>
+                    <td>I cry.</td>
+                </tr>
+                <tr>
+                    <td>nicho:kani</td>
+                    <td>I am crying.</td>
+                </tr>
+                <tr>
+                    <td>ankochinih</td>
+                    <td>Y'all are sleeping.</td>
+                </tr>
+                <tr>
+                    <td>tikochih</td>
+                    <td>We sleep.</td>
+                </tr>
+                <tr>
+                    <td>kochiya</td>
+                    <td>He was sleeping.</td>
+                </tr>
+                <tr>
+                    <td>kwi:kas</td>
+                    <td>He will sing.</td>
+                </tr>
+                <tr>
+                    <td>ankochiyah</td>
+                    <td>Y'all were sleeping.</td>
+                </tr>
+                <tr>
+                    <td>nicho:kas</td>
+                    <td>I will cry.</td>
+                </tr>
+                <tr>
+                    <td>cho:kayah</td>
+                    <td>They were crying.</td>
+                </tr>
+                <tr>
+                    <td>tikochi</td>
+                    <td>You sleep.</td>
+                </tr>
+                <tr>
+                    <td>ancho:kah</td>
+                    <td>Y'all cry.</td>
+                </tr>
+                <tr>
+                    <td>tikochis</td>
+                    <td>You will sleep.</td>
+                </tr>
+                <tr>
+                    <td>ticho:kayah</td>
+                    <td>We were crying.</td>
+                </tr>
+                <tr>
+                    <td>cho:ka</td>
+                    <td>He cries.</td>
+                </tr>
+                <tr>
+                    <td>kochini</td>
+                    <td>He is sleeping.</td>
+                </tr>
+                <tr>
+                    <td>ancho:kayah</td>
+                    <td>Y'all were crying.</td>
+                </tr>
+                <tr>
+                    <td>ticho:kanih</td>
+                    <td>We are crying.</td>
+                </tr>
+                <tr>
+                    <td>kwi:kah</td>
+                    <td>They sing.</td>
+                </tr>
+            </table>
+
+            <form class='input-box'>
+                <p class="instructions">Now, considering the patterns you have noticed in the above words, translate the following into English:</p>
+                <label for="q1">tikwi:kani</label>
+                <input type="text" id="q1" name="q1" onkeyup='checkAnswers()'>
+                <label for="q2">nikwi:kaya</label>
+                <input type="text" id="q2" name="q2" onkeyup='checkAnswers()'>
+                <label for="q3">cho:kanih</label>
+                <input type="text" id="q3" name="q3" onkeyup='checkAnswers()'>
+
+                <p class="instructions">Now translate the following English sentences into Classical Nahuatl (be sure to include the ":" symbol where appropriate):</p>
+                <label for="q4">They sleep.</label>
+                <input type="text" id="q4" name="q4" onkeyup='checkAnswers()'>
+                <label for="q5">I will sleep.</label>
+                <input type="text" id="q5" name="q5" onkeyup='checkAnswers()'>
+                <label for="q6">You will cry.</label>
+                <input type="text" id="q6" name="q6" onkeyup='checkAnswers()'>
+
+                <div class="puzzle-feedback">
+                    <label for="correct">Correct: <span id='num-correct'>0</span>/6</label>
+                    <progress id="correct" value="0" max="6"> 0/6 </progress> 
+                </div>
+            </form>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <button class="neighbor-btn previous-btn">Previous</button>
+            <button class='neighbor-btn next-btn'>Next</button>
+        </div>
+    </main>
+
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/nahuatl.js'></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

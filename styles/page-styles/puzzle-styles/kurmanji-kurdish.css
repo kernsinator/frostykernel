@@ -103,3 +103,22 @@ input {
     margin-bottom: 1em;
     margin-top: -1em;
 }
+
+/* === OTHER === */
+
+small {
+    font-size: 0.75em;
+    width: 100%;
+    display: block;
+    color: gray;
+    text-align: center !important;
+    margin-top: 0.5em;
+}
+
+p {
+    margin-bottom: -1em !important;
+}
+
+.instructions {
+    margin-bottom: 1em !important;
+}

@@ -49,6 +49,7 @@ function tallyCorrect() {
 }
 
 function checkFilled() {
+    console.log('hi');
     let complete = 0;
     for (i = 0 ; i < answers.length ; i++) {
         let inputName = 'q' + (i + 1);

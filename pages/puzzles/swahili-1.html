@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/page-styles/puzzle-styles/swahili-1.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/component-styles/megamenu.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Swahili of Eastern Congo</title>
+        <!-- Scripts for shared header and footer-->
+        <script src="/components/header.js" type="text/javascript" defer></script>
+        <script src="/components/footer.js" type="text/javascript" defer></script>
+      </head>
+
+<body class="light-theme"> <!-- Necessary for dark mode to work -->
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Swahili of Eastern Congo</h1>
+            <p class="attribution">Ronnie Sim</p>
+
+            <p>Swahili belongs to a large language family called Bantu. Bantu languages are spoken by more than 100 million people in Southern and Eastern Africa. Swahili is the mother tongue of about 5 million people, and is the common language of trade along much of the east coast of Africa. However, the variety of Swahili represented in this puzzle is spoken hundreds of kilometers inland, and is quite different from that which is spoken near the coast.</p>
+
+            <p>Your task is simple. Read the first ten Swahili words and their English translations. Then give the Swahili words that correspond to the last three English translations:</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Swahili</th>
+                        <th>English</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Ninasema.</td>
+                        <td>I speak.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Wunasema.</td>
+                        <td>You speak.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Anasema.</td>
+                        <td>She speaks.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Wanasema.</td>
+                        <td>They speak.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ninaona.</td>
+                        <td>I see.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Niliona</td>
+                        <td>I saw.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ninawaona.</td>
+                        <td>I see them.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Niliwuona.</td>
+                        <td>I saw you.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Ananiona.</td>
+                        <td>She sees me.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Wutakaniona.</td>
+                        <td>You will see me.</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td><input type='text' id='q1' onkeyup='checkAnswers()'></td>
+                        <td>She saw them.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><input type='text' id='q2' onkeyup='checkAnswers()'></td>
+                        <td>I will see you.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><input type='text' id='q3' onkeyup='checkAnswers()'></td>
+                        <td>She saw me.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="puzzle-feedback">
+                <label id='correct-label' for="correct">Correct: <span id='num-correct'>0</span>/3</label>
+                <progress id="correct" value="0" max="3"> 0/3 </progress> 
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <a href='/pages/puzzles/nahuatl.html' class="neighbor-btn previous-btn">Previous</a>
+            <!--<a href="/pages/puzzles/chickasaw.html" class='neighbor-btn next-btn'>Next</a>-->
+        </div>
+    </main>
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/swahili-1.js'></script>
+</body>
+
+</html>

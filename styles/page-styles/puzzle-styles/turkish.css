@@ -2,7 +2,7 @@
 
 .puzzle {
     display: grid;
-    grid-template-columns: 3fr 4fr; /* Change this to modify width of clues and input sections */
+    grid-template-columns: 3fr 2fr; /* Change this to modify width of clues and input sections */
     grid-template-areas: "clues inputs"
         "clues feedback";
 }

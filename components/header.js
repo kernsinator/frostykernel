@@ -22,13 +22,8 @@ class Header extends HTMLElement {
                             <li><a href='/pages/puzzles/chickasaw.html'>Chickasaw</a></li>
                             <li><a href='/pages/puzzles/kurdish.html'>Kurdish</a></li>
                             <li><a href='/pages/puzzles/nahuatl.html'>Nahuatl</a></li>
-
-                   
                             <li><a href='/pages/puzzles/tajik.html'>Tajik</a></li>
-
-                            <li><a href='/pages/puzzles/swahili-1.html'>Swahili</a></li>
-                      
-
+                            <li><a href='/pages/puzzles/swahili-1.html'>Swahili</a></li>                      
                             <li><a href='/pages/puzzles/turkish.html'>Turkish</a></li>
                             <li><a href='/pages/puzzles/yaqui.html'>Yaqui</a></li>
                         </ul>
@@ -36,7 +31,7 @@ class Header extends HTMLElement {
                     <div class="megamenu-col">
                         <h3>Blue Square <span class='difficulty-symbol blue'>■</span></h3>
                         <ul>
-                            <li><a href='/pages/puzzles/under-construction.html'>Archi</a></li>
+                            <li><a href='/pages/puzzles/archi.html'>Archi</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Czech</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Endo</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>French</a></li>

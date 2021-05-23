@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/page-styles/puzzle-styles/archi.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/component-styles/megamenu.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Scripts for shared header and footer-->
+        <script src="/components/header.js" type="text/javascript" defer></script>
+        <script src="/components/footer.js" type="text/javascript" defer></script>
+
+        <title>Archi</title>
+        <link rel="icon" type='image/jpg' href="/assets/images/favicon.ico">
+      </head>
+
+<body class="light-theme"> <!-- Necessary for dark mode to work -->
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Archi <span class='difficulty-symbol blue'>■</span></h1>
+            <p class="attribution">by A.E. Kibrik</p>
+
+            <p>Archi is one of 25 languages spoken high in the mountains of Daghestan, a semi-autonomous region within the Russian Federation. With less than 1000 speakers, Archi is one of the world's many seriously endangered languages. However, Archi is still used on a daily basis, and speakers maintain a rich tradition of oral folklore and mythology. As you work through this puzzle you will find that the grammar of Archi is very different from that of English or other European languages.</p>
+
+            <p>The following are some Archi sentences and their English translations. Note: the symbols "I" (capital "i") and apostrophe represent special sounds in Archi.</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Archi</th>
+                        <th>English</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Diya verkurshi vi.</td>
+                        <td>The father is falling down.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>HoIn h'oti irkkurshi bi.</td>
+                        <td>The cow is seeking the grass.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Boshor baba dirkkurshi vi.</td>
+                        <td>The man is seeking the aunt.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Shusha erkurshi i.</td>
+                        <td>The bottle is falling down.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>HoIn borcirshi bi.</td>
+                        <td>The cow is standing.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Diyamu buva dark'arshi di.</td>
+                        <td>The mother is left by the father.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Buvamu dogi birkkurshi bi.</td>
+                        <td>The donkey is sought by the mother.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Dadamu h'oti irkkurshi i.</td>
+                        <td>The grass is sought by the uncle.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Lo orcirshi i.</td>
+                        <td>The child is standing.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Lo hoIn birkkurshi vi.</td>
+                        <td><input type='text' id='q1' onkeyup='checkAnswers()'></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Diya boshor vark'arshi vi.</td>
+                        <td><input type='text' id='q2' onkeyup='checkAnswers()'></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td><input type='text' id='q3' onkeyup='checkAnswers()'></td>
+                        <td>The uncle is sought by the aunt.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td><input type='text' id='q4' onkeyup='checkAnswers()'></td>
+                        <td>The donkey is falling down.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td><input type='text' id='q5' onkeyup='checkAnswers()'></td>
+                        <td>The mother is leaving the father.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="puzzle-feedback">
+                <label id='correct-label' for="correct">Correct: <span id='num-correct'>0</span>/5</label>
+                <progress id="correct" value="0" max="5"> 0/5 </progress> 
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <a href='/pages/puzzles/yaqui.html' class="neighbor-btn previous-btn">Previous</a>
+            <!--<a href="/pages/puzzles/czech.html" class='neighbor-btn next-btn'>Next</a>-->
+        </div>
+    </main>
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/archi.js'></script>
+</body>
+
+</html>

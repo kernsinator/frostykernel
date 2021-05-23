@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/page-styles/puzzle-styles/turkish.css" rel="stylesheet" type="text/css" media="all">
+        <link href="/styles/component-styles/megamenu.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Turkish</title>
+        <!-- Scripts for shared header and footer-->
+        <script src="/components/header.js" type="text/javascript" defer></script>
+        <script src="/components/footer.js" type="text/javascript" defer></script>
+      </head>
+
+<body class="light-theme"> <!-- Necessary for dark mode to work -->
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Turkish</h1>
+            <p class="attribution">by Miriam Fried</p>
+
+            <p>Turkish is spoken by about 60 million people in Turkey and surrounding countries. It is a member of the Altaic language family, which consists of about 65 languages, including Turkmen, Mongolian and maybe even Korean and Japanese. Until 1929, Turkish was written in the Arabic writing system. That system was then replaced by the Roman system, with a few special letters to represent certain Turkish sounds. For example, in this puzzle you will find the letter "ç" which represents a sound similar to the first sound in the English word "chop."</p>
+
+            <p>The following are some Turkish words, followed by their English translations. Look at these words carefully and try to answer the questions below:</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Turkish</th>
+                        <th>English</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>kilimler</td>
+                        <td>carpets</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>kilimde</td>
+                        <td>in the carpet</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>deftere</td>
+                        <td>to the notebook</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>defterlerde</td>
+                        <td>in the notebooks</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>adamlara</td>
+                        <td>to the men</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>taraflarda</td>
+                        <td>in the sides</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>okula</td>
+                        <td>to the school</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>arabalar</td>
+                        <td>cars</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>deniz</td>
+                        <td>ocean</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>masa</td>
+                        <td>table</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>ev</td>
+                        <td>house</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>havuç</td>
+                        <td>carrot</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>defter</td>
+                        <td>notebook</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="puzzle-input">
+                <form>
+                    <label for="q1">in the ocean</label>
+                    <input type="text" id="q1" name="q1" onkeyup='checkAnswers()'>
+                    <label for="q2">tables</label>
+                    <input type="text" id="q2" name="q2" onkeyup='checkAnswers()'>
+                    <label for="q3">to the houses</label>
+                    <input type="text" id="q3" name="q3" onkeyup='checkAnswers()'>
+                    <label for="q4">to the carrot</label>
+                    <input type="text" id="q4" name="q4" onkeyup='checkAnswers()'>
+                    <label for="q5">in the notebook</label>
+                    <input type="text" id="q5" name="q5" onkeyup='checkAnswers()'>
+                </form> 
+
+                <p><small>Copy and paste this character when necessary: ç</small></p>
+            </div> 
+
+            <div class="puzzle-feedback">
+                <label for="correct">Correct: <span id='num-correct'>0</span>/5</label>
+                <progress id="correct" value="0" max="5"> 0/5 </progress> 
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <a href='/pages/puzzles/tajik.html' class="neighbor-btn previous-btn disabled">Previous</a>
+            <a href="/pages/puzzles/yaqui.html" class='neighbor-btn next-btn'>Next</a>
+        </div>
+    </main>
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/turkish.js'></script>
+</body>
+
+</html>

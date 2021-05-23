@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-generic.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/tajik.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+    <link rel="stylesheet" href="/styles/component-styles/megamenu.css">
+
+    <title>Tajik</title>
+    <link rel="icon" href="/assets/images/FKlogo.png">
+
+    <!-- Scripts for shared header and footer-->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+</head>
+<body class='light-theme'>
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Tajik</h1>
+            <p class="attribution">By Adriana Solovyova</p>
+
+            <p>There are 3,344,720 speakers of Tajik in Tajikistan (one of the Central Asian republics of the former Soviet Union) and another million speakers in surrounding countries. Tajik is an Indo-European language related most closely to Farsi (or Persian), the major language of Iran. Most literature in Tajik uses a version of the Cyrillic writing system. This is the system used in Russian, Ukrainian, Bulgarian and some other languages of Eastern Europe and Central Asia. You don't need to know how to read Cyrillic writing to solve this puzzle -- just use your common sense! One thing you will quickly realize is that words in Tajik are not arranged in the same order as they are in English.</p>
+
+            <p>Below are three phrases from the Tajik language with their English translations. Your task is to give the English translations of all four Tajik words. The possibilities are simply "good," "friend," "neighbor," and "your." The order of the words does the rest of the communicative work!</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+
+                <table class='sample-table'>
+                    <tr>
+                        <td>дуусти ҳуби ҳамсоаи сумо</td>
+                        <td>a good friend of your neighbor</td>
+                    </tr>
+                    <tr>
+                        <td>ҳамсоаи дуусти ҳуби сумо</td>
+                        <td>a neighbor of your good friend</td>
+                    </tr>
+                    <tr>
+                        <td>ҳамсоаи ҳуби дуусти сумо</td>
+                        <td>a good neighbor of your friend</td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th>Tajik</th>
+                        <th class='cell-center'>Letter of correct translation</th>
+                        <th>English </th>
+                    </tr>
+                    <tr>
+                        <td>1. дуусти</td>
+                        <td class='cell-center'><input id='q1' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>A. good</td>
+                    </tr>
+                    <tr>
+                        <td>2. ҳуби</td>
+                        <td class='cell-center'><input id='q2' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>B. friend</td>
+                    </tr>
+                    <tr>
+                        <td>3. ҳамсоаи</td>
+                        <td class='cell-center'><input id='q3' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>C. neighbor</td>
+                    </tr>
+                    <tr>
+                        <td>4. сумо</td>
+                        <td class='cell-center'><input id='q4' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>D. your</td>
+                    </tr>
+                </table>
+
+                <div class="puzzle-feedback">
+                    <div class='check-answers-box'>
+                        <button id='check-button' onclick='checkAnswers()' disabled>Check Answers</button>
+                        <label id='correct-output' for="correct">Correct: <span id='num-correct'>0</span>/4</label>
+                    </div>
+                    
+                    
+                    <progress id="correct" value="0" max="4"> 0/4 </progress> 
+                </div>
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <a class="neighbor-btn previous-btn" href='/pages/puzzles/swahili-1.html'>Previous</a>
+            <!--<a class='neighbor-btn next-btn' href='/pages/puzzles/under-construction.html'>Next</a>-->
+        </div>
+    </main>
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/tajik.js'></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

@@ -22,7 +22,7 @@ class Header extends HTMLElement {
                             <li><a href='/pages/puzzles/chickasaw.html'>Chickasaw</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Kurdish</a></li>
                             <li><a href='/pages/puzzles/nahuatl.html'>Nahuatl</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Swahili</a></li>
+                            <li><a href='/pages/puzzles/swahili-1.html'>Swahili</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Tajik</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Turkish</a></li>
                             <li><a href='/pages/puzzles/yaqui.html'>Yaqui</a></li>

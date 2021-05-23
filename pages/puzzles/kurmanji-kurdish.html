@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/kurmanji-kurdish.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page-styles/puzzle-styles/puzzle-template.css">
+    <link rel="stylesheet" href="/styles/component-styles/megamenu.css">
+
+    <title>Kurmanji Kurdish</title>
+    <link rel="icon" href="/assets/images/FKlogo.png">
+
+    <!-- Scripts for shared header and footer-->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+</head>
+<body class='light-theme'>
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Kurmanji Kurdish</h1>
+            <p class="attribution">Puzzle by N. Bailey</p>
+
+            <p>The Kurdish people number at least 25 million. Kurdish is an important member of the Iranian branch of the Indo-European language family. There are several dialects of Kurdish. Kurmanji Kurdish is spoken by about 12-15 million people, living in Turkey, Iran, Iraq and Syria and is represented by three literary standards and several speech varieties. Some speakers also live in the southern parts of the former Soviet Union, especially in Armenia and Georgia. The following puzzle is from the variety of Kurmanji Kurdish spoken in the former Soviet Union. This variety is normally written in Cyrillic script (like Russian), but is presented here in a modified Latin script:
+                <br>
+                <small>(Note: You must fill all the blanks before you can check your answers.)</small>
+            </p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th>Kurdish</th>
+                        <th class='cell-center'>Letter of correct translation</th>
+                        <th>English</th>
+                    </tr>
+                    <tr>
+                        <td>1. Ez h'irç'ê dibînim</td>
+                        <td class='cell-center'><input id='q1' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>A. You see Bear.</td>
+                    </tr>
+                    <tr>
+                        <td>2. Tu dir'evî</td>
+                        <td class='cell-center'><input id='q2' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>B. You see me</td>
+                    </tr>
+                    <tr>
+                        <td>3. Tu min dibînî</td>
+                        <td class='cell-center'><input id='q3' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>C. Bear runs.</td>
+                    </tr>
+                    <tr>
+                        <td>4. H'irç' dir'eve</td>
+                        <td class='cell-center'><input id='q4' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>D. You run.</td>
+                    </tr>
+                    <tr>
+                        <td>5. Ez dir'evim</td>
+                        <td class='cell-center'><input id='q5' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>E. I see Bear.</td>
+                    </tr>
+                    <tr>
+                        <td>6. Tu h'irç'ê dibînî</td>
+                        <td class='cell-center'><input id='q6' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>F. I run.</td>
+                    </tr>
+                </table>
+
+                <p class="instructions">Finally, translate this Kurdish sentence:</p>
+
+                <div class="final-question">
+                    <label class='inline-label' for="q7">H'irç' min dibîne.</label>
+                    <input class='inline-input' type="text" id="q7" name="q7" onkeyup='checkFilled()'>
+                </div>
+
+                <div class="puzzle-feedback">
+                    <div class='check-answers-box'>
+                        <button id='check-button' onclick='checkAnswers()' disabled>Check Answers</button>
+                        <label id='correct-output' for="correct">Correct: <span id='num-correct'>0</span>/7</label>
+                    </div>
+                    
+                    
+                    <progress id="correct" value="0" max="7"> 0/7 </progress> 
+                </div>
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <a class="neighbor-btn previous-btn" href='/pages/puzzles/chickasaw.html'>Previous</a>
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/nahuatl.html'>Next</a>
+        </div>
+    </main>
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/kurmanji-kurdish.js'></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

@@ -1,0 +1,124 @@
+.puzzle {
+    display: grid;
+    grid-template-columns: 3fr; /* Change this to modify width of clues and input sections */
+    grid-template-areas: "clues clues"
+        "clues clues" !important;
+}
+
+td {
+    text-align: left !important;
+}
+
+td input {
+    text-align: center;
+}
+
+.puzzle-feedback {
+    text-align: center;
+}
+
+/* All this mess is just to change the color of the progress bar */
+
+progress::-moz-progress-bar { background: #7c37d6; }
+progress::-webkit-progress-value { background: #7c37d6; }
+progress { color: #7c37d6; }
+
+progress {
+    border-radius: 0;
+    width: 80%;
+    height: 1.5em; 
+}
+
+label {
+    display: block;
+    margin: 0;
+}
+
+.puzzle-links {
+    color: black;
+    transition: color 150ms;
+    text-decoration: underline;
+}
+
+.puzzle-links:hover {
+    color: var(--main-bg-color);
+}
+
+.cell-center {
+    align-items: center;
+}
+
+input {
+    max-width: 4em;
+    align-self: center;
+}
+
+#check-button {
+    width: 20em;
+    height: 3em;
+    float: left;
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+.progress-box {
+    height: 3em;
+    border: 1px solid red;
+}
+
+#check-button {
+    width: 20em;
+    height: 3em;
+    float: left;
+    margin-left: 5em;
+}
+
+#correct-output {
+    display: block;
+    margin-right: 5em;
+}
+
+.check-answers-box {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* ====== Final Question ====== */
+
+.inline-input {
+    display: inline;
+    max-width: 50vw;
+    width: 40vw;
+    float: right;
+    margin: 0;
+}
+
+.inline-label {
+    display: inline;
+    max-width: 40vw;
+}
+
+.final-question {
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: -1em;
+}
+
+/* === OTHER === */
+
+small {
+    font-size: 0.75em;
+    width: 100%;
+    display: block;
+    color: gray;
+    text-align: center !important;
+    margin-top: 0.5em;
+}
+
+p {
+    margin-bottom: -1em !important;
+}
+
+.instructions {
+    margin-bottom: 1em !important;
+}

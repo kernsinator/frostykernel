@@ -8,7 +8,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header id="header" class="grid-element" class='header'>
-    <a href="/index.html" id="title"> FrostyKernel</a>
+    <a href="/index.html" id="title"><img class='brand' src="/assets/images/FKLogo.png"></a>
     <nav class="topnav" id="navbar">
       <a href="/index.html" class="active">Home</a>
       <li class='megamenu-btn'>
@@ -69,6 +69,7 @@ class Header extends HTMLElement {
                 </div>
             </li>
       <a href="/pages/about.html">About</a>
+      <a onclick='themeToggle()'>Settings</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>

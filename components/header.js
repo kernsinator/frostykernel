@@ -8,7 +8,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <header id="header" class="grid-element" class='header'>
-    <a href="/index.html" id="title"> FrostyKernel</a>
+    <a href="/index.html" id="title"><img class='brand' src="/assets/images/FKLogo.png"></a>
     <nav class="topnav" id="navbar">
       <a href="/index.html" class="active">Home</a>
       <li class='megamenu-btn'>
@@ -32,27 +32,43 @@ class Header extends HTMLElement {
                         <h3>Blue Square <span class='difficulty-symbol blue'>■</span></h3>
                         <ul>
                             <li><a href='/pages/puzzles/archi.html'>Archi</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Czech</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Endo</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>French</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Hausa</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Hawaiian</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Indonesian</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Luvian</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Maasai</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Quechua</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Sanskrit</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Shugnan</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Swahili</a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Czech <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Endo <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>French <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Hausa <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Hawaiian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Indonesian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Luvian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Maasai <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Quechua <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Sanskrit <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Shugnan <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Swahili <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
                         </ul>
                     </div>
                     <div class="megamenu-col">
                         <h3>Black Diamond <span class='difficulty-symbol black'>◆</span></h3>
                         <ul>
-                            <li><a href='/pages/puzzles/under-construction.html'>Babylonian</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Georgian</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Orkhono-Yeniseyan</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Samoan</a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Babylonian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Georgian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Orkhono-Yeniseyan <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Samoan <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
                             <li class='megamenu-padding'> </li>
                         </ul>
 
@@ -60,15 +76,20 @@ class Header extends HTMLElement {
 
                         <h3>Double Black Diamond <span class='difficulty-symbol black'>◆◆</span></h3>
                         <ul>
-                            <li><a href='/pages/puzzles/under-construction.html'>Amharic</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Ancient Inscriptions</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Thai</a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Tocharian</a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Amharic <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Ancient Inscriptions <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Thai <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Tocharian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
+                            </span></a></li>
                         </ul>
                     </div>
                 </div>
             </li>
       <a href="/pages/about.html">About</a>
+      <a onclick='themeToggle()'>Settings</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>

@@ -24,7 +24,7 @@ if (currentTheme == "dark") {
 }
 
 // Listen for a click on the button 
-  btn.addEventListener("click", function() {
+  function themeToggle() {
     // Toggle the .dark-theme class on e ach click
     document.body.classList.toggle("dark-theme");
     
@@ -37,4 +37,4 @@ if (currentTheme == "dark") {
     }
   // Then save the choice in localStorage
   localStorage.setItem("theme", theme);
-});
+};

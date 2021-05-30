@@ -299,6 +299,30 @@ a.main-links:hover:before {
     text-align: center;
 }
 
+.badge {
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.75em;
+  width: 2em !important;
+  padding: 0.25em 0 0em -1em !important;
+  position: relative;
+  margin-left: -0.3em;
+  float: right;
+}
+
+.badge-content {
+  margin-left: 0.5em;
+}
+
+.directory-badge i {
+  margin: 0 0.1em 0 0.25em;
+}
+
+a > .directory-badge {
+  color: yellow;
+}
+
 /* End of main styling */
 
 /* Start of footer styling */

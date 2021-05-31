@@ -1,5 +1,9 @@
 /* ========== BODY ========== */
 
+main {
+    max-width: 90%;
+}
+
 /* Language Info Section */
 
 .language-info {

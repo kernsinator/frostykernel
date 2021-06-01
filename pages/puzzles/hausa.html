@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet">
+    <link href="/styles/page-styles/puzzle-styles/hausa.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/component-styles/megamenu.css" rel="stylesheet">
+
+    <!-- Fonts and icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts for shared header and footer -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <!-- Title and favicon -->
+    <title>Hausa</title>
+    <link rel="icon" type='image/jpg' href="/assets/images/favicon.ico">
+
+</head>
+
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Hausa</h1>
+            <p class="attribution">Tom Payne</p>
+
+            <p>Hausa is one of the major languages of West Africa. It is spoken as a first language by about 22,000,000 people and as a second, or "trade" language by about 16,000,000 more people. Most Hausa speakers live in Nigeria. Nigeria is one of the most linguistically diverse countries on earth. Most Nigerians speak at least three languages: a home language, a trade language and English. There are 470 distinct indigenous languages spoken in Nigeria today. All blacksmiths in West Africa are men.</p>
+
+            <p>The following are some sentences in Hausa, with their English translations. Some of the Hausa sentences, and some of the translations have been left out. Your task is to fill in the missing sentences, either in Hausa or English.</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Hausa</th>
+                        <th>English</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mace za ta hura wuta.</td>
+                        <td>The woman will start the fire.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mace ta hura wuta.</td>
+                        <td>The woman started the fire.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Makeri za i hura wuta.</td>
+                        <td>The blacksmith will start the fire.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mata za su hura wuta.</td>
+                        <td>The women will start the fire.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Makera za su hura wuta.</td>
+                        <td><input type='text' id='q1' onkeyup='checkAnswers()'></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Audu ya zo makaranta.</td>
+                        <td>Audu (man's name) came to school.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Makeri ya kawo Audu.</td>
+                        <td>The blacksmith brought Audu.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Audu ya kawo makeri.</td>
+                        <td>Audu brought the blacksmith.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Yarinya ta dawo.</td>
+                        <td>The girl returned.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Yarinya ta zo makaranta.</td>
+                        <td><input type='text' id='q2' onkeyup='checkAnswers()'></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Ka zo gida.</td>
+                        <td>You came home.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Sun zo.</td>
+                        <td>They came.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Sun kawo makera.</td>
+                        <td><input type='text' id='q3' onkeyup='checkAnswers()'></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Makeri ya kawo yarinya.</td>
+                        <td>The blacksmith brought the girl.</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td><input type='text' id='q4' onkeyup='checkAnswers()'></td>
+                        <td>The blacksmith will bring the girl.</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td><input type='text' id='q5' onkeyup='checkAnswers()'></td>
+                        <td>She will return.</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td><input type='text' id='q6' onkeyup='checkAnswers()' disabled></td>
+                        <td>The women brought Audu. <div class='bounty-icon'><abbr title="There is a bounty on this answer! Click here for more info.">&#63;</abbr></div></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="puzzle-feedback">
+                <label id='correct-label' for="correct">Correct: <span id='num-correct'>0</span>/5</label>
+                <progress id="correct" value="0" max="5"> 0/5 </progress> 
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <!--<a class="neighbor-btn previous-btn" href='/pages/puzzles/under-construction.html'>Previous</a>
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/under-construction.html'>Next</a> -->
+        </div>
+    </main>
+
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/puzzle-scripts/hausa.js"></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

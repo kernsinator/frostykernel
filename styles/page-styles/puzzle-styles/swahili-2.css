@@ -1,0 +1,70 @@
+table, td, tr {
+    text-align: left;
+}
+
+.cell-center {
+    align-items: center !important;
+}
+
+.cell-center>input {
+    width: 3em;
+}
+
+.final-question {
+    margin-top: 0;
+    width: 100%;
+}
+
+.instructions {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.inline-label {
+    float: left;
+}
+
+.inline-input {
+    float: right;
+    width: 90%;
+}
+
+.puzzle-feedback {
+    margin-top: 2em;
+    text-align: right;
+}
+
+small {
+    font-size: 0.75em;
+    width: 100%;
+    display: block;
+    color: gray;
+    text-align: center !important;
+    margin-top: 0.5em;
+}
+
+#check-button {
+    width: 35%;
+    height: 2.5em;
+    float: left;
+    margin-left: 5em;
+}
+
+.progress-box button {
+    float: left;
+    width: 4em;
+}
+
+.progress-box progress {
+    float: right;
+    width: 50%;
+}
+
+.check-answers-box {
+    margin-right: 15%;
+    margin-bottom: 1em;
+}
+
+.input {
+    width: 50%;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet">
+    <link href="/styles/page-styles/puzzle-styles/swahili-2.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/component-styles/megamenu.css" rel="stylesheet">
+
+    <!-- Fonts and icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Scripts for shared header and footer -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <!-- Title and favicon -->
+    <title>Swahili</title>
+    <link rel="icon" type='image/jpg' href="/assets/images/favicon.ico">
+
+</head>
+
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Swahili <span class='difficulty-symbol blue'>■</span></h1>
+            <p class="attribution">by A. Zhurinsky, adapted by Valentin Vydrine</p>
+
+            <p>Swahili belongs to a large language family called Bantu. Bantu languages are spoken by probably more than 100 million people in the countries that cover most of the southern half of Africa. Swahili is the mother tongue of about 5 million people, and is the common language of trade and political communication along much of the east coast of Africa.</p>
+
+            <p>The following are certain dates in Swahili. Their English translations are given in random order. Your task is to match the Swahili dates to the correct English translations:</p>
+
+            <p><small>(Note: You must fill all the blanks before you can check your answers.)</small></p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <div class="puzzle-clues">
+                <table>
+                    <tr>
+                        <th>Swahili</th>
+                        <th class='cell-center'>Letter of correct translation</th>
+                        <th>English</th>
+                    </tr>
+                    <tr>
+                        <td>1. tarehe tatu Disemba jumamosi</td>
+                        <td class='cell-center'><input id='q1' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>A. Monday, October 5th</td>
+                    </tr>
+                    <tr>
+                        <td>2. tarehe tano Oktoba jumapili</td>
+                        <td class='cell-center'><input id='q2' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>B. Tuesday, April 2nd</td>
+                    </tr>
+                    <tr>
+                        <td>3. tarehe pili Aprili jumanne</td>
+                        <td class='cell-center'><input id='q3' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>C. Wednesday, October 5th</td>
+                    </tr>
+                    <tr>
+                        <td>4. tarehe tano Oktoba jumatatu</td>
+                        <td class='cell-center'><input id='q4' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>D. Tuesday, April 4th</td>
+                    </tr>
+                    <tr>
+                        <td>5. tarehe nne Aprili jumanne</td>
+                        <td class='cell-center'><input id='q5' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>E. Sunday, October 5th</td>
+                    </tr>
+                    <tr>
+                        <td>6. tarehe tano Oktoba jumatano</td>
+                        <td class='cell-center'><input id='q6' type='text' onkeyup='checkFilled()' maxlength='1'></td>
+                        <td>F. Saturday, December 3rd</td>
+                    </tr>
+                </table>
+
+                <p class="instructions">Now translate the following into Swahili:</p>
+
+                <div class="final-question">
+
+                    <table>
+                        <tr>
+                            <td>Wednesday, April 3rd</td>
+                            <td><input class='inline-input' type="text" id="q7" name="q7" onkeyup='checkFilled()'></td>
+                        </tr>
+                        <tr>
+                            <td>Sunday, December 2nd</td>
+                            <td><input class='inline-input' type="text" id="q8" name="q8" onkeyup='checkFilled()'></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="puzzle-feedback">
+                    <div class='check-answers-box'>
+                        <label id='correct-output' for="correct">Correct: <span id='num-correct'>0</span>/8</label>
+                    </div>
+                    
+                    <div class="progress-box">
+                        <button id='check-button' onclick='checkAnswers()' disabled>Check Answers</button>
+                        <progress id="correct" value="0" max="8"> 0/8 </progress>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <!-- <a class="neighbor-btn previous-btn" href='/pages/puzzles/chickasaw.html'>Previous</a>
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/swahili-2.html'>Next</a> -->
+        </div>
+    </main>
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/swahili-2.js'></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

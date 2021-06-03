@@ -75,10 +75,10 @@ th {
     font-weight: bold;
 }
 
-td:first-of-type {
+/* td:first-of-type {
     text-align: center;
     padding: 0.5em 0.5em;
-}
+} I'm not sure what this did, so if you see any table format issues let me know. */
 
 table {
     width: 100%;
@@ -128,6 +128,18 @@ table {
 
 .next-btn {
     float: right;
+}
+
+/* ========== PROGRESS BAR ========= */
+
+progress::-moz-progress-bar { background: #7c37d6; }
+progress::-webkit-progress-value { background: #7c37d6; }
+progress { color: #7c37d6; }
+
+progress {
+    border-radius: 0;
+    width: 80%;
+    height: 1.5em; 
 }
 
 /* ========== UNDER CONSTRUCTION ========== */

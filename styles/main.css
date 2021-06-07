@@ -363,7 +363,30 @@ a > .directory-badge {
   color: yellow;
 }
 
+ol {
+  list-style-type: decimal;
+  margin-left: 3em;
+}
+
 /* End of main styling */
+
+/* Bounty badge styling */
+
+.bounty-icon {
+  display: inline !important;
+  color: white;
+  background-color: var(--main-bg-color);
+  padding: 0 0.5em;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+/* End of bounty badge styling */
 
 /* Start of footer styling */
 #footer {

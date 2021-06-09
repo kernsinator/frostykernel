@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet">
+    <link href="/styles/page-styles/puzzle-styles/samoan.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/component-styles/megamenu.css" rel="stylesheet">
+
+    <!-- Fonts and icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts for shared header and footer -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <!-- Title and favicon -->
+    <title>Samoan</title>
+    <link rel="icon" type='image/jpg' href="/assets/images/favicon.ico">
+
+</head>
+
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>Samoan <span class='difficulty-symbol black'>◆</span></h1>
+            <p class="attribution">by Olga Uryupina</p>
+
+            <p>The Samoan language is spoken by 38,700 people in American Samoa and 153,000 in Western Samoa, an independent country. About 162,000 more live in New Zealand, Hawaii, Fiji and on the West Coast of mainland USA. Samoan is a Polynesian language. Other than Indo-European, the Malayo-Polynesian language family is the most widespread on earth, extending from Easter Island (part of Chile) in the East, all the way to Madagascar off the coast of Africa in the West. Then from Aotearoa (New Zealand) in the south to Hawaii. This is because the ancient Malayo-Polynesians were great ocean sailors. They were masters of the tides, winds and currents, and evidence of their travels can be found throughout the Pacific region. The word "Polynesian" means "many islands."</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <p>Here are some Samoan sentences and their translations into English:</p>
+
+            <table>
+                <tr>
+                    <th>Samoan</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>Ua lafi le pua'a.</td>
+                    <td>The pig hid.</td>
+                </tr>
+                <tr>
+                    <td>'Ua tutuli e tagata maile.</td>
+                    <td>The people chased away the dogs.</td>
+                </tr>
+                <tr>
+                    <td>'Ua pupu'e e le pusi 'isumu.</td>
+                    <td>The cat caught the mice.</td>
+                </tr>
+                <tr>
+                    <td>'Ua pu'e e le tama le pusi.</td>
+                    <td>The boy caught the cat.</td>
+                </tr>
+                <tr>
+                    <td>'Ua fefefe teine.</td>
+                    <td>The girls got scared.</td>
+                </tr>
+                <tr>
+                    <td>'Ua fasi e tama le 'isumu.</td>
+                    <td>The boys killed the mouse.</td>
+                </tr>
+                <tr>
+                    <td>'Ua fefe le pusi.</td>
+                    <td><input type='text' id='q1' onkeyup='checkAnswers()'></td>
+                </tr>
+                <tr>
+                    <td>'Ua tuli e 'isumu le pusi.</td>
+                    <td><input type='text' id='q2' onkeyup='checkAnswers()'></td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='q3' onkeyup='checkAnswers()'></td>
+                    <td>The boys hid.</td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='q4' onkeyup='checkAnswers()'></td>
+                    <td>The mice caught the dog.</td>
+                </tr>
+                <tr>
+                    <td><input type='text' id='q5' onkeyup='checkAnswers()'></td>
+                    <td>The girl killed the pigs.</td>
+                </tr>
+            </table>
+
+            <div class="puzzle-feedback">
+                <label id='correct-label' for="correct">Correct: <span id='num-correct'>0</span>/5</label>
+                <progress id="correct" value="0" max="5"> 0/5 </progress> 
+            </div>
+            
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <!-- <a class="neighbor-btn previous-btn" href='/pages/puzzles/under-construction.html'>Previous</a>
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/under-construction.html'>Next</a> -->
+        </div>
+    </main>
+
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src='/scripts/puzzle-scripts/samoan.js'></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

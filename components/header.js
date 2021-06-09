@@ -67,8 +67,7 @@ class Header extends HTMLElement {
                             </span></a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Orkhono-Yeniseyan <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
                             </span></a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Samoan <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
-                            </span></a></li>
+                            <li><a href='/pages/puzzles/samoan.html'>Samoan</a></li>
                             <li class='megamenu-padding'> </li>
                         </ul>
 

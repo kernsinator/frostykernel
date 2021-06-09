@@ -4,7 +4,7 @@ let q3 = document.getElementById('q3');
 let q4 = document.getElementById('q4');
 let q5 = document.getElementById('q5');
 
-let answers = ['The child is seeking the cow.', 'The father is leaving the man.', 'Babamu dada virkkurshi vi.', 'Dogi berkurshi bi.', "Buva diya vark'arshi di."];
+let answers = ['The cat got scared.', 'The mice chased away the cat.', "'Ua lalafi tama.", "'Ua pu'e e 'isumu le maile.", "'Ua fafasi e le teine pua'a."];
 let accuracy = [false, false, false, false, false];
 let userInputs = [q1, q2, q3, q4, q5];
 

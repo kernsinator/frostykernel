@@ -1,0 +1,13 @@
+input {
+    width: 100%;
+}
+
+.puzzle-feedback {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#correct-label {
+    display: block;
+    margin: 1em 0em !important;
+}

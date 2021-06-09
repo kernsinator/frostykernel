@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/puzzle-styles/puzzle-template.css" rel="stylesheet">
+    <link href="/styles/page-styles/puzzle-styles/french.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/component-styles/megamenu.css" rel="stylesheet">
+
+    <!-- Fonts and icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Scripts for shared header and footer -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <!-- Title and favicon -->
+    <title>French</title>
+    <link rel="icon" type='image/jpg' href="/assets/images/favicon.ico">
+
+</head>
+
+<body class='light-theme'>
+
+    <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+    <main>
+        <div class="language-info">
+            <h1 class='lang-name'>French</h1>
+            <p class="attribution">by Boris Iomdin and Maria Rubenstein</p>
+
+            <p>The table below lists some French words with prefixes and the corresponding words without prefixes, along with the English translations. The shaded cells mean that there is no prefixless verb that corresponds to the prefixed verb in the left column.</p>
+
+            <p>You'll notice that some of the prefixed words have been left out. Your task is to select the correct prefixed word based on the pattern represented in the other words in the table. Yes, it is very possible to solve this puzzle without using a dictionary.</p>
+
+            <p>You must make all of your selections, then click the "Check" button to see how you did. Good luck!</p>
+        </div>
+
+        <hr class='puzzle-divider'>
+
+        <div class="puzzle">
+            
+            <table>
+                <tr>
+                    <th>Prefixed French Word</th>
+                    <th>English</th>
+                    <th>No prefix</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>réagir</td>
+                    <td>to react</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td><select name="q1" id="q1" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">réassortir</option>
+                        <option value="re2">reassortir</option>
+                    </select></td>
+                    <td>to match again</td>
+                    <td>assortir</td>
+                    <td>to match</td>
+                </tr>
+                <tr>
+                    <td>recommencer</td>
+                    <td>to recommence</td>
+                    <td>commencer</td>
+                    <td>to commence</td>
+                </tr>
+                <tr>
+                    <td>recomposer</td>
+                    <td>to compose again</td>
+                    <td>composer</td>
+                    <td>to compose</td>
+                </tr>
+                <tr>
+                    <td>réconcilier</td>
+                    <td>to reconcile</td>
+                    <td>concilier</td>
+                    <td>to reconcile</td>
+                </tr>
+                <tr>
+                    <td>réconforter</td>
+                    <td>to comfort</td>
+                    <td>conforter</td>
+                    <td>to comfort</td>
+                </tr>
+                <tr>
+                    <td>recréer</td>
+                    <td>to create again</td>
+                    <td>créer</td>
+                    <td>to create</td>
+                </tr>
+                <tr>
+                    <td><select name="q2" id="q2" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">récurer</option>
+                        <option value="re2">recurer</option>
+                    </select></td>
+                    <td>to clean</td>
+                    <td>curer</td>
+                    <td>to clean</td>
+                </tr>
+                <tr>
+                    <td>redire</td>
+                    <td>to say again</td>
+                    <td>dire</td>
+                    <td>to say again</td>
+                </tr>
+                <tr>
+                    <td>réduire</td>
+                    <td>to reduce</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td>rééditer</td>
+                    <td>to publish again</td>
+                    <td>éditer</td>
+                    <td>to publish</td>
+                </tr>
+                <tr>
+                    <td>refaire</td>
+                    <td>to redo/remake</td>
+                    <td>faire</td>
+                    <td>to do/make</td>
+                </tr>
+                <tr>
+                    <td><select name="q3" id="q3" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">réformer</option>
+                        <option value="re2">reformer</option>
+                    </select></td>
+                    <td>to reform</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td><select name="q4" id="q4" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">réformer</option>
+                        <option value="re2">reformer</option>
+                    </select></td>
+                    <td>to form again</td>
+                    <td>former</td>
+                    <td>to form</td>
+                </tr>
+                <tr>
+                    <td><select name="q5" id="q5" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">réfuter</option>
+                        <option value="re2">refuter</option>
+                    </select></td>
+                    <td>to refute</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td>réincarner</td>
+                    <td>to reincarnate</td>
+                    <td>incarner</td>
+                    <td>to incarnate</td>
+                </tr>
+                <tr>
+                    <td>rejouer</td>
+                    <td>to resume playing</td>
+                    <td>jouer</td>
+                    <td>to play</td>
+                </tr>
+                <tr>
+                    <td><select name="q6" id="q6" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">rélancer</option>
+                        <option value="re2">relancer</option>
+                    </select></td>
+                    <td>to throw again</td>
+                    <td>lancer</td>
+                    <td>to throw</td>
+                </tr>
+                <tr>
+                    <td><select name="q7" id="q7" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">rémunérer</option>
+                        <option value="re2">remunérer</option>
+                    </select></td>
+                    <td>to remunerate</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td>rénover</td>
+                    <td>to renovate</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td>réopérer</td>
+                    <td>to operate again</td>
+                    <td>opérer</td>
+                    <td>to operate</td>
+                </tr>
+                <tr>
+                    <td>repartir</td>
+                    <td>to depart again</td>
+                    <td>partir</td>
+                    <td>to depart</td>
+                </tr>
+                <tr>
+                    <td><select name="q8" id="q8" onchange='checkFilled()'>
+                        <option value="false" selected="selected">Select</option>
+                        <option value="re1">répartir</option>
+                        <option value="re2">repartir</option>
+                    </select></td>
+                    <td>to distribute</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td>répéter</td>
+                    <td>to repeat</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+                <tr>
+                    <td>résonner</td>
+                    <td>to resound</td>
+                    <td>sonner</td>
+                    <td>to resound</td>
+                </tr>
+                <tr>
+                    <td>révéler</td>
+                    <td>to reveal</td>
+                    <td><div class="full-block">0</div></td>
+                    <td><div class="full-block">0</div></td>
+                </tr>
+            </table>
+
+            <div class="puzzle-feedback">
+                <div class='check-answers-box'>
+                    <button id='check-button' onclick='checkAnswers()' disabled>Check Answers</button>
+                    <label id='correct-output' for="correct">Correct: <span id='num-correct'>0</span>/8</label>
+                </div>
+                
+                
+                <progress id="correct" value="0" max="8"> 0/8 </progress> 
+            </div>
+        </div>
+    
+        <p class="copyright">Copyright &copy 2005, Linguistics Society of America</p>
+
+        <div class="neighbor-btn-container">
+            <!-- <a class="neighbor-btn previous-btn" href='/pages/puzzles/under-construction.html'>Previous</a> -->
+            <a class='neighbor-btn next-btn' href='/pages/puzzles/hausa.html'>Next</a>
+        </div>
+    </main>
+
+    <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+
+    <!--SCRIPTS-->
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/puzzle-scripts/french.js"></script>
+
+    <!--END SCRIPTS-->
+</body>
+</html>

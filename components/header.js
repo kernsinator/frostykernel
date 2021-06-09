@@ -36,10 +36,8 @@ class Header extends HTMLElement {
                             </span></a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Endo <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
                             </span></a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>French <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
-                            </span></a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Hausa <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
-                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>French</a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Hausa</a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Hawaiian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
                             </span></a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Indonesian <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
@@ -54,8 +52,7 @@ class Header extends HTMLElement {
                             </span></a></li>
                             <li><a href='/pages/puzzles/under-construction.html'>Shugnan <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
                             </span></a></li>
-                            <li><a href='/pages/puzzles/under-construction.html'>Swahili <span class="badge" title="This puzzle is under construction."><i class="fa fa-exclamation-triangle badge-content" aria-hidden="true"></i>
-                            </span></a></li>
+                            <li><a href='/pages/puzzles/under-construction.html'>Swahili</a></li>
                         </ul>
                     </div>
                     <div class="megamenu-col">

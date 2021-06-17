@@ -88,6 +88,7 @@ class Header extends HTMLElement {
                 </div>
             </li>
       <a href="/pages/about.html">About</a>
+      <a href="/pages/bounties.html">Bounties</a>
       <a onclick='themeToggle()'>Settings</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>

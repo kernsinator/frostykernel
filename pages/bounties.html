@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheets -->
+    <link href="/styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/page-styles/about.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/styles/component-styles/megamenu.css" rel="stylesheet" type="text/css" media="all">
+    
+    <!-- Fonts and icons -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Scripts for shared header and footer -->
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+
+    <!-- Title and favicon -->
+    <title>FrostyKernel</title>
+    <link rel="icon" href="/assets/images/favicon.ico">
+
+</head>
+
+<body class="light-theme">
+
+  <header-component id="header"></header-component> <!-- Include to insert shared header-->
+
+  <main class="test" class="grid-element">
+    <h1>Bounties</h1>
+    
+    <h2>What is a bounty?</h2>
+    <hr>
+    <p>We're passionate about languages, but that doesn't necessarily make us experts &mdash; there are questions or even entire puzzles that leave us scratching our heads. And in cases where the original webpages don't have answer-checking, we can put forth reasonable guesses but there's no guarantee we actually got it right. In these cases, the question or puzzle will be labeled with an icon like this: <abbr class='bounty-icon' title="There is a bounty on this answer! Well, this isn't a question and there is no bounty. This is an example. But you get the idea.">!</abbr></p>
+
+    <h2 tabindex="0">How do bounties work?</h2>
+    <hr>
+    <p>If you know the answer to any question that has a bounty on it, send us a message at [email here] along with an explanation of your reasoning. If we think you nailed it, we'll implement your answer and give you two shout-outs: one here on the bounties page, and one on the puzzle page itself. Plus you get the pride of contributing to language conservation (in our own small way).</p>
+
+    <div class="callout">
+        <h1>Active Bounties</h1>
+        <hr>
+        <p>Active bounties go here</p>
+    </div>
+
+    <div class="callout">
+        <h1>Bounty Hunters</h1>
+        <hr>
+        <p>Contributors go here</p>
+    </div>
+
+  </main>
+  <footer-component id="footer"></footer-component> <!-- Include to insert shared header-->
+  <script src="/scripts/main.js"></script>
+</body>
+
+</html>
